@@ -8,3 +8,6 @@ __pycache__/
 
 # keep videos/ committed (small MP4s + srt + chapters), but not stray temp
 videos/**/_concat.mp4
+
+# raw extraction caches
+.cache_*.json
