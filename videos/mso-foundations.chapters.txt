@@ -1,0 +1,6 @@
+00:00:00  Orientation
+00:00:52  How LLMs Behave
+00:03:55  Models & Reasoning
+00:05:33  Prompting Modes
+00:06:50  Technical Substrate
+00:09:05  Recap

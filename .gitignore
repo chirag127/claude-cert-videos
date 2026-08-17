@@ -1,0 +1,10 @@
+# scratch / intermediates
+work/
+*.log
+
+# python
+__pycache__/
+*.pyc
+
+# keep videos/ committed (small MP4s + srt + chapters), but not stray temp
+videos/**/_concat.mp4
