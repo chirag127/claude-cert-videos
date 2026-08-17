@@ -1,0 +1,14 @@
+1
+00:00:00,000 --> 00:00:40,896
+At its core, Claude is reached over an
+HTTP REST API: your code sends a request…
+
+2
+00:00:40,896 --> 00:01:17,856
+A synchronous request is the simplest
+pattern: you send the request and wait for…
+
+3
+00:01:17,856 --> 00:02:14,712
+Two patterns address high-volume work, and
+they solve different problems. The Python…

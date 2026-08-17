@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:55,344
+In the last two screens you chose a
+platform and pinned its version. That…
+
+2
+00:00:55,344 --> 00:01:44,928
+Within Bedrock specifically, the choice
+between global and regional endpoints is…
+
+3
+00:01:44,928 --> 00:02:46,752
+The first-party Claude API may not offer
+EU data residency; confirm current…
+
+4
+00:02:46,752 --> 00:03:41,328
+Instrument cost per call for each
+platform. Confirm the current pricing…
+
+5
+00:03:41,328 --> 00:04:31,440
+CostToken price, data egress, platform
+fees, and integration effort all…
+
+6
+00:04:31,440 --> 00:05:22,224
+Setup You picked the platform your team
+was already familiar with, because the…
+
+7
+00:05:22,224 --> 00:06:15,072
+A different platform, one the team knew
+less well, would have satisfied the…
+
+8
+00:06:15,072 --> 00:06:39,000
+When the customer is regulated, the
+residency and compliance constraint is…

@@ -1,0 +1,69 @@
+1
+00:00:00,000 --> 00:00:54,888
+Your tests now tell you a failure exists
+and the trace tells you where it happens.…
+
+2
+00:00:54,888 --> 00:01:50,616
+The first decision for any failure is
+whether a later attempt is likely to…
+
+3
+00:01:50,616 --> 00:03:01,680
+Server errors in the 5xx range, including
+a 500 internal error and a 504 timeout,…
+
+4
+00:03:01,680 --> 00:03:59,136
+Time changes nothing, because each request
+will produce an identical error. Retrying…
+
+5
+00:03:59,136 --> 00:04:51,936
+When you are unsure, the safe default is
+to treat an error as terminal and raise…
+
+6
+00:04:51,936 --> 00:05:49,944
+Decide where the retry lives: either let
+the SDK handle transient cases and reserve…
+
+7
+00:05:49,944 --> 00:06:41,088
+Treat the header as the authoritative wait
+time when it is present, and treat your…
+
+8
+00:06:41,088 --> 00:07:51,984
+A visible failure is far easier to catch
+than a confident but incorrect answer…
+
+9
+00:07:51,984 --> 00:08:55,080
+The error-handling decision table you can
+keep open while you build Error…
+
+10
+00:08:55,080 --> 00:09:29,640
+The model made a content decision, not a
+transient error.Raise the refusal to the…
+
+11
+00:09:29,640 --> 00:10:24,072
+Setup In development, you called the
+endpoint a few dozen times and it returned…
+
+12
+00:10:24,072 --> 00:11:24,600
+The code was written without any error
+handling, because up until now, nothing…
+
+13
+00:11:24,600 --> 00:11:57,864
+The rate-limit response was retriable, so
+it needed exponential backoff with a…
+
+14
+00:11:57,864 --> 00:12:22,992
+The block below has one defect. Identify
+it and write the corrected version. Broken…

@@ -1,0 +1,74 @@
+1
+00:00:00,000 --> 00:00:56,880
+Up to now you've been managing what Claude
+remembers between turns. Multimodal…
+
+2
+00:00:56,880 --> 00:01:54,456
+A 1,000 × 1,000 pixel image is ⌈1000/28⌉ ×
+⌈1000/28⌉ = 36 × 36 patches, about 1,296…
+
+3
+00:01:54,456 --> 00:02:48,864
+If you are building a pipeline that
+processes images, measure the token cost…
+
+4
+00:02:48,864 --> 00:03:43,656
+How it works: Pass a publicly reachable
+URL in the source block, and Claude…
+
+5
+00:03:43,656 --> 00:04:37,296
+Currently in beta and not available on
+Bedrock or Vertex AI; verify availability…
+
+6
+00:04:37,296 --> 00:05:40,776
+The block accepts an optional title field
+for a readable document name, and an…
+
+7
+00:05:40,776 --> 00:06:41,976
+A prompt for visual analysis should name
+how Claude should handle each type of…
+
+8
+00:06:41,976 --> 00:07:44,472
+The tradeoff is latency: batch processing
+is non-deterministic and can take up to 24…
+
+9
+00:07:44,472 --> 00:08:46,704
+When multimodal and batch fit together,
+and when they don't The combination works…
+
+10
+00:08:46,704 --> 00:09:35,016
+Setup Splitting a job into chunks and
+processing them one after another is not…
+
+11
+00:09:35,016 --> 00:10:27,168
+What else can I do?" Senior Developer:
+"How are you submitting them?" Developer:…
+
+12
+00:10:27,168 --> 00:11:20,832
+The per-token cost is lower than
+synchronous, and the rate limit does not…
+
+13
+00:11:20,832 --> 00:11:34,944
+Results return in arbitrary order, not the
+order requests were submitted in. Use the…
+
+14
+00:11:34,944 --> 00:11:50,064
+Read the three input scenarios below. For
+each input scenario, select the correct…
+
+15
+00:11:50,064 --> 00:12:54,240
+A reference product diagram used in every
+request your pipeline makesMessage Batches…

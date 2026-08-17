@@ -1,0 +1,29 @@
+1
+00:00:00,000 --> 00:00:54,480
+The previous screens kept a system inside
+its cost budget once the model was chosen.…
+
+2
+00:00:54,480 --> 00:01:48,456
+Confirm the current lineup and model IDs
+against platform.claude.com at build time.…
+
+3
+00:01:48,456 --> 00:02:40,656
+This is the most common and most expensive
+model-selection mistake in production. The…
+
+4
+00:02:40,656 --> 00:03:37,392
+Where every request is the same shape,
+skip the router and pin one model. When to…
+
+5
+00:03:37,392 --> 00:04:31,128
+For each scenario, pick the model tier
+(Opus, Sonnet, or Haiku) and identify the…
+
+6
+00:04:31,128 --> 00:05:28,440
+Which choice is best?ASonnet, the deciding
+constraint is cost efficiency on a long…

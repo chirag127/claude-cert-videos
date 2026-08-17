@@ -1,0 +1,94 @@
+1
+00:00:00,000 --> 00:00:55,992
+Earlier the module covered how to build an
+MCP server and configure its transport and…
+
+2
+00:00:55,992 --> 00:01:54,888
+Can an administrator lock the
+configuration so no individual developer…
+
+3
+00:01:54,888 --> 00:02:53,640
+No one copies a secret by hand; the OAuth
+flow is the expected pattern for cloud…
+
+4
+00:02:53,640 --> 00:03:52,008
+Managing the secret itself is the other
+half of secure authentication. A…
+
+5
+00:03:52,008 --> 00:04:47,232
+The MCP key leak mentioned earlier was not
+a bad choice of auth method, it was a…
+
+6
+00:04:47,232 --> 00:05:44,016
+The second practice is where the value
+goes once it is out of the file. For a…
+
+7
+00:05:44,016 --> 00:06:41,208
+The third practice is rotation: replacing
+a credential with a new one on a schedule…
+
+8
+00:06:41,208 --> 00:07:36,384
+Keep a record of which services use each
+credential, so a rotation does not surface…
+
+9
+00:07:36,384 --> 00:08:33,720
+The enterprise managed configuration from
+earlier sections answers the last…
+
+10
+00:08:33,720 --> 00:09:26,016
+This is why the infrastructure requirement
+and the platform choice from earlier in…
+
+11
+00:09:26,016 --> 00:10:21,120
+You can review the proposed edits,
+identify anything that touches paths you…
+
+12
+00:10:21,120 --> 00:11:26,064
+Who approves each phase before the next
+one begins? Plan mode enforces the…
+
+13
+00:11:26,064 --> 00:12:30,984
+Never in committed config.PostToolUse hook
+to audit log.Administrator via enterprise…
+
+14
+00:12:30,984 --> 00:13:28,992
+The fixes are not hard, but they require
+attention before the review. Handles…
+
+15
+00:13:28,992 --> 00:14:28,008
+Setup The OAuth connection worked end to
+end in staging, so moving it to production…
+
+16
+00:14:28,008 --> 00:15:21,216
+The OAuth provider only accepts redirect
+URIs you've explicitly registered, and…
+
+17
+00:15:21,216 --> 00:16:07,128
+Instead, it was a configuration step that
+applies per host and per environment, and…
+
+18
+00:16:07,128 --> 00:17:22,032
+Try it now: read the connection trace
+below. Name the authentication failure…
+
+19
+00:17:22,032 --> 00:17:36,576
+Update the MCP configuration to reference
+the variable.CFix C: Switch from API key…

@@ -1,0 +1,4 @@
+1
+00:00:00,000 --> 00:00:52,680
+Before you write a line of code against
+Claude, it helps to know what the words…

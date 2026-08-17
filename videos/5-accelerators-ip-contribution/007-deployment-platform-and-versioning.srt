@@ -1,0 +1,4 @@
+1
+00:00:00,000 --> 00:00:12,816
+Try it now. A customer runs AWS with a
+data-residency requirement and needs to be…

@@ -1,0 +1,9 @@
+1
+00:00:00,000 --> 00:00:57,864
+Alphabetical. Click a term to expand its
+definition. AcceleratorA working solution…
+
+2
+00:00:57,864 --> 00:01:33,744
+Model alias versus pinned IDAn alias such
+as opus or sonnet resolves to a…

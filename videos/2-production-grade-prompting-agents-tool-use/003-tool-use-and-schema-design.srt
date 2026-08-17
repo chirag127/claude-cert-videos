@@ -1,0 +1,134 @@
+1
+00:00:00,000 --> 00:00:50,424
+So far, the work has been about shaping
+what Claude produces: framing the request,…
+
+2
+00:00:50,424 --> 00:01:45,624
+This back-and-forth shouldn’t be ignored
+in production: if your application does…
+
+3
+00:01:45,624 --> 00:02:48,552
+Message block structure in a tool-use
+conversation A tool-use conversation is…
+
+4
+00:02:48,552 --> 00:03:49,608
+This is not something you can fix by
+adjusting your prompt; it’s structural,…
+
+5
+00:03:49,608 --> 00:04:51,120
+The tool_result must carry the same ID.
+Without that pairing, the API rejects the…
+
+6
+00:04:51,120 --> 00:05:54,816
+Redacted thinking blocks follow the same
+rule: pass them back as received, even…
+
+7
+00:05:54,816 --> 00:06:50,400
+You should always write the description in
+two parts, including when to and when not…
+
+8
+00:06:50,400 --> 00:07:41,568
+Decision table: Schema design choices The
+schema is what Claude reads to decide…
+
+9
+00:07:41,568 --> 00:08:39,480
+When the subtasks are independent of each
+other, you can structure the tool set so…
+
+10
+00:08:39,480 --> 00:09:32,904
+Optional fieldsUse optional fields for
+parameters with sensible defaults or where…
+
+11
+00:09:32,904 --> 00:10:30,120
+Overlapping parameter typesWhen two tools
+accept the same parameter shape, add…
+
+12
+00:10:30,120 --> 00:11:27,504
+The tool names are distinct, but Claude’s
+tool selection weighs descriptions…
+
+13
+00:11:27,504 --> 00:12:22,536
+Only use this if search_knowledge_base was
+called earlier in this conversation for…
+
+14
+00:12:22,536 --> 00:13:23,232
+Poor fit.Two tools that do similar things
+and need ever-longer descriptions to keep…
+
+15
+00:13:23,232 --> 00:14:16,944
+GitHub exposes repositories, pull
+requests, issues, projects, and more. To…
+
+16
+00:14:16,944 --> 00:15:13,656
+Claude still issues a tool_use block, your
+application still executes the tool and…
+
+17
+00:15:13,656 --> 00:16:13,632
+Register only the servers you are actively
+using, and check context cost against your…
+
+18
+00:16:13,632 --> 00:17:14,232
+The MCP Connector requires the
+mcp-client-2025-11-20 beta header to be…
+
+19
+00:17:14,232 --> 00:18:14,832
+One constraint worth flagging if you are
+using Anthropic’s MCP connector in the…
+
+20
+00:18:14,832 --> 00:19:09,768
+Write schemas manually when No MCP server
+covers your use case, or when you need…
+
+21
+00:19:09,768 --> 00:19:31,392
+Apply tool allowlisting via MCPToolset to
+limit the surface area Claude reasons over…
+
+22
+00:19:31,392 --> 00:20:25,368
+Setup A schema can look correct and still
+fail. Typed parameters and passing…
+
+23
+00:20:25,368 --> 00:21:23,160
+The Senior Developer asks one question
+that reframes the whole problem:…
+
+24
+00:21:23,160 --> 00:22:18,408
+Do not call this if the answer is
+available in the current session context.'…
+
+25
+00:22:18,408 --> 00:22:41,208
+When the failure is overlapping
+descriptions, the fix is consistent: add…
+
+26
+00:22:41,208 --> 00:23:32,856
+The session trace below shows an agent
+calling a tool, receiving a result, and…
+
+27
+00:23:32,856 --> 00:24:42,552
+Session trace Turn 1: User: [text]: "What
+is the current balance for account…

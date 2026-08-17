@@ -128,6 +128,12 @@ async def narrate_all(items, voice):
 
 
 def audio_duration(path):
+    # Fast path: read MP3 header with mutagen (no subprocess). Falls back to ffprobe.
+    try:
+        from mutagen.mp3 import MP3
+        return max(float(MP3(str(path)).info.length), 1.0)
+    except Exception:
+        pass
     out = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
          "-of", "default=noprint_wrappers=1:nokey=1", str(path)],
@@ -214,104 +220,125 @@ def chunk_slides(slides, max_chars=900):
     return out
 
 
-def build(course_json):
+def build(course_json, module_no=None):
     data = json.loads(Path(course_json).read_text(encoding="utf-8"))
     slug, title, voice = data["slug"], data["title"], data.get("voice", "en-US-AndrewNeural")
+    module_no = module_no if module_no is not None else data.get("module")
     slides = chunk_slides(data["slides"])
 
     wdir = ROOT / "work" / slug
     wdir.mkdir(parents=True, exist_ok=True)
     (ROOT / "videos").mkdir(exist_ok=True)
 
-    # 1) narration text + audio paths
-    narr = [(f"{s['heading']}. {s['body']}", wdir / f"audio_{i:04d}.mp3")
-            for i, s in enumerate(slides, 1)]
-    print(f"[{slug}] generating {len(narr)} narration clips ...", flush=True)
-    asyncio.run(narrate_all(narr, voice))
-
-    # 2) render slides + measure durations + build segments
-    durations = []
-    seg_files = []
+    # 1) narration text + audio paths (skip clips already generated -> resumable)
+    narr = []
     for i, s in enumerate(slides, 1):
-        png = wdir / f"slide_{i:04d}.png"
         mp3 = wdir / f"audio_{i:04d}.mp3"
-        seg = wdir / f"seg_{i:04d}.mp4"
-        render_slide(i, s["heading"], s["body"], title, png)
-        durations.append(audio_duration(mp3))
-        subprocess.run([
-            "ffmpeg", "-y", "-loop", "1", "-i", str(png), "-i", str(mp3),
-            "-c:v", "libx264", "-preset", "medium", "-tune", "stillimage",
-            "-crf", "32", "-pix_fmt", "yuv420p",
-            "-c:a", "aac", "-b:a", "48k", "-ac", "1", "-shortest",
-            "-vf", f"scale={W}:{H}", "-r", "5", str(seg)
-        ], check=True, capture_output=True)
-        seg_files.append(seg)
-    print(f"[{slug}] encoded {len(seg_files)} segments", flush=True)
+        if mp3.exists() and mp3.stat().st_size > 500:
+            continue
+        narr.append((f"{s['heading']}. {s['body']}", mp3))
+    if narr:
+        print(f"[{slug}] generating {len(narr)} narration clips ...", flush=True)
+        asyncio.run(narrate_all(narr, voice))
+    else:
+        print(f"[{slug}] all narration clips cached", flush=True)
 
-    # 3) chapters (new chapter when the 'chapter' field changes)
-    chapters = []
-    t = 0.0
-    cur, cur_start = None, 0.0
-    for i, s in enumerate(slides):
+    # 2) render slides + measure durations (mutagen, no subprocess)
+    for i, s in enumerate(slides, 1):
+        render_slide(i, s["heading"], s["body"], title, wdir / f"slide_{i:04d}.png")
+    durations = [audio_duration(wdir / f"audio_{i:04d}.mp3") for i in range(1, len(slides) + 1)]
+
+    # 3) group consecutive slides into chapters (topic boundaries from the source)
+    chapters = []  # list of (name, [slide_index...])
+    for idx, s in enumerate(slides):
         name = s.get("chapter") or s["heading"]
-        if name != cur:
-            if cur is not None:
-                chapters.append((cur, cur_start, t))
-            cur, cur_start = name, t
-        t += durations[i]
-    if cur is not None:
-        chapters.append((cur, cur_start, t))
+        if not chapters or chapters[-1][0] != name:
+            chapters.append((name, []))
+        chapters[-1][1].append(idx)
 
-    meta = wdir / "chapters.meta"
-    lines = [";FFMETADATA1", f"title={title}"]
-    for name, st, en in chapters:
-        lines += ["[CHAPTER]", "TIMEBASE=1/1000",
-                  f"START={int(st*1000)}", f"END={int(en*1000)}", f"title={name}"]
-    meta.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    # module-prefixed course dir so the whole set sorts in learning order
+    dirname = f"{module_no}-{slug}" if module_no else slug
+    outdir = ROOT / "videos" / dirname
+    outdir.mkdir(parents=True, exist_ok=True)
 
-    # 4) subtitles: cue per slide. Show the spoken body (wrapped to 2 lines);
-    #    fall back to heading for slides with no body.
-    srt = []
-    t = 0.0
-    for i, s in enumerate(slides):
-        st, en = t, t + durations[i]
-        t = en
-        spoken = re.sub(r"\s+", " ", (s.get("body") or s["heading"])).strip()
-        # wrap subtitle to <=2 lines of ~42 chars for readability
-        words, line, cue_lines = spoken.split(), "", []
-        for w in words:
-            if len(line) + 1 + len(w) > 42:
+    def _slug(txt):
+        t = re.sub(r"[^a-zA-Z0-9]+", "-", txt).strip("-").lower()
+        return t[:48] or "part"
+
+    # 4) one small MP4 (+ SRT) per chapter, encoded in a single ffmpeg pass each.
+    #    Files are zero-padded 3 digits (000, 001, ...) so lexical sort == play order.
+    index_lines = [f"# {title}", "", "One video per topic. Each has embedded chapter"
+                   " metadata + a matching .srt subtitle file.", ""]
+    total_sec = 0.0
+    total_mb = 0.0
+    for ci, (name, idxs) in enumerate(chapters):
+        cslug = f"{ci:03d}-{_slug(name)}"
+        img_list = wdir / f"imgs_{ci:02d}.txt"
+        aud_list = wdir / f"auds_{ci:02d}.txt"
+        il, al, cdur = [], [], 0.0
+        for j in idxs:
+            n = j + 1
+            png = (wdir / f"slide_{n:04d}.png").as_posix()
+            il.append(f"file '{png}'\nduration {durations[j]:.3f}")
+            al.append(f"file '{(wdir / f'audio_{n:04d}.mp3').as_posix()}'")
+            cdur += durations[j]
+        last = idxs[-1] + 1
+        il.append(f"file '{(wdir / f'slide_{last:04d}.png').as_posix()}'")
+        img_list.write_text("\n".join(il) + "\n", encoding="utf-8")
+        aud_list.write_text("\n".join(al) + "\n", encoding="utf-8")
+
+        # chapter metadata (single chapter spanning the whole part)
+        meta = wdir / f"meta_{ci:02d}.txt"
+        meta.write_text(
+            ";FFMETADATA1\n" + f"title={name}\n" +
+            "[CHAPTER]\nTIMEBASE=1/1000\nSTART=0\n" +
+            f"END={int(cdur*1000)}\ntitle={name}\n", encoding="utf-8")
+
+        out_mp4 = outdir / f"{cslug}.mp4"
+        subprocess.run([
+            "ffmpeg", "-y",
+            "-f", "concat", "-safe", "0", "-i", str(img_list),
+            "-f", "concat", "-safe", "0", "-i", str(aud_list),
+            "-i", str(meta), "-map_metadata", "2",
+            "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage",
+            "-crf", "30", "-pix_fmt", "yuv420p", "-vf", f"scale={W}:{H}",
+            "-c:a", "aac", "-b:a", "48k", "-ac", "1",
+            "-fps_mode", "vfr", "-shortest", "-movflags", "+faststart",
+            str(out_mp4)
+        ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        # per-part SRT (cue per slide, timed within the part)
+        srt, t = [], 0.0
+        for k, j in enumerate(idxs, 1):
+            st, en = t, t + durations[j]
+            t = en
+            spoken = re.sub(r"\s+", " ", (slides[j].get("body") or slides[j]["heading"])).strip()
+            words, line, cue_lines = spoken.split(), "", []
+            for w in words:
+                if len(line) + 1 + len(w) > 42:
+                    cue_lines.append(line)
+                    line = w
+                else:
+                    line = (line + " " + w).strip()
+                if len(cue_lines) == 2:
+                    break
+            if line and len(cue_lines) < 2:
                 cue_lines.append(line)
-                line = w
-            else:
-                line = (line + " " + w).strip()
-            if len(cue_lines) == 2:
-                break
-        if line and len(cue_lines) < 2:
-            cue_lines.append(line)
-        cue = "\n".join(cue_lines[:2]) + ("…" if len(spoken) > 84 else "")
-        srt.append(f"{i+1}\n{_ts_srt(st)} --> {_ts_srt(en)}\n{cue}\n")
-    (ROOT / "videos" / f"{slug}.srt").write_text("\n".join(srt), encoding="utf-8")
+            cue = "\n".join(cue_lines[:2]) + ("…" if len(spoken) > 84 else "")
+            srt.append(f"{k}\n{_ts_srt(st)} --> {_ts_srt(en)}\n{cue}\n")
+        (outdir / f"{cslug}.srt").write_text("\n".join(srt), encoding="utf-8")
 
-    (ROOT / "videos" / f"{slug}.chapters.txt").write_text(
-        "\n".join(f"{_ts_hms(st)}  {name}" for name, st, en in chapters) + "\n",
-        encoding="utf-8")
+        mb = out_mp4.stat().st_size / (1024 * 1024)
+        total_sec += cdur
+        total_mb += mb
+        index_lines.append(f"{ci:03d}. {name}  —  {_ts_hms(cdur)}, {mb:.1f} MB  ->  {cslug}.mp4")
+        print(f"[{slug}] part {ci:03d}/{len(chapters)-1}: {name[:40]}  {_ts_hms(cdur)}  {mb:.1f}MB", flush=True)
 
-    # 5) concat + mux chapters + faststart
-    listf = wdir / "list.txt"
-    listf.write_text("".join(f"file '{p.as_posix()}'\n" for p in seg_files), encoding="utf-8")
-    concat_mp4 = wdir / "_concat.mp4"
-    subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
-                    "-c", "copy", str(concat_mp4)], check=True, capture_output=True)
-    out_mp4 = ROOT / "videos" / f"{slug}.mp4"
-    subprocess.run(["ffmpeg", "-y", "-i", str(concat_mp4), "-i", str(meta),
-                    "-map_metadata", "1", "-codec", "copy", "-movflags", "+faststart",
-                    str(out_mp4)], check=True, capture_output=True)
-    size_mb = out_mp4.stat().st_size / (1024 * 1024)
-    print(f"[{slug}] DONE -> {out_mp4.name}  {len(chapters)} chapters  "
-          f"{size_mb:.2f} MB  {_ts_hms(t)}", flush=True)
-    return out_mp4
+    (outdir / "index.md").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
+    print(f"[{slug}] DONE -> {len(chapters)} parts, {total_mb:.1f} MB total, {_ts_hms(total_sec)}", flush=True)
+    return outdir
 
 
 if __name__ == "__main__":
-    build(sys.argv[1])
+    mod = int(sys.argv[2]) if len(sys.argv) > 2 else None
+    build(sys.argv[1], mod)

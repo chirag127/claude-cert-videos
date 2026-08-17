@@ -1,0 +1,29 @@
+1
+00:00:00,000 --> 00:00:52,416
+1 Set the standard before you build it. An
+eval turns "done" from a feeling into a…
+
+2
+00:00:52,416 --> 00:01:45,240
+The same instinct drives the retrieval
+choice: fetch once for single-fact…
+
+3
+00:01:45,240 --> 00:02:39,936
+You cannot budget what you do not measure,
+so instrument token cost, latency, and…
+
+4
+00:02:39,936 --> 00:03:34,968
+Examine untrusted input as data, scope the
+agent's identity to least privilege, keep…
+
+5
+00:03:34,968 --> 00:04:40,152
+Anthropic public references
+(time-sensitive) IDSourceTypeUsed for…
+
+6
+00:04:40,152 --> 00:05:06,072
+S5Claude Code 101 In Action
+(Skilljar)Anthropic courseClaude Code…

@@ -1,0 +1,79 @@
+1
+00:00:00,000 --> 00:00:58,200
+Previously we saw how Claude Code gates
+actions through permission modes and…
+
+2
+00:00:58,200 --> 00:01:49,176
+The generated file is a great baseline but
+should be validated before using. Refine…
+
+3
+00:01:49,176 --> 00:02:49,104
+Rules instruction files: scoping guidance
+to where it applies In the previous…
+
+4
+00:02:49,104 --> 00:04:02,352
+Note that the scoping comes from the
+frontmatter, not from file placement.…
+
+5
+00:04:02,352 --> 00:04:56,256
+Hooks: running your own scripts at fixed
+points in the lifecycle A Hook allows you…
+
+6
+00:04:56,256 --> 00:05:52,224
+Because it runs first, a PreToolUse hook
+can examine the tool call and exit with…
+
+7
+00:05:52,224 --> 00:06:53,400
+Use it for follow-up actions that belong
+at the end of a turn, such as…
+
+8
+00:06:53,400 --> 00:07:47,088
+That is the difference between a guardrail
+and a convention. Subagents: delegating…
+
+9
+00:07:47,088 --> 00:08:44,808
+The Explore and Plan built-in subagents
+skip CLAUDE.md and git status to keep…
+
+10
+00:08:44,808 --> 00:09:44,976
+If a built-in agent needs skill-backed
+behavior, the correct path is to create a…
+
+11
+00:09:44,976 --> 00:10:44,352
+Scoped via a paths glob in YAML
+frontmatter; without paths, loads like…
+
+12
+00:10:44,352 --> 00:11:32,568
+Isolated from the main session.When it
+runs: When dispatched by the main session…
+
+13
+00:11:32,568 --> 00:12:38,376
+Setup Your CLAUDE.md kept growing because
+every new rule felt worth adding. Each…
+
+14
+00:12:38,376 --> 00:13:48,696
+Do not modify the /legacy/tokens/
+directory." Claude Code action: [Reading…
+
+15
+00:13:48,696 --> 00:14:35,256
+The historical decisions log and archived
+notes should have been noted somewhere,…
+
+16
+00:14:35,256 --> 00:14:44,688
+Try it now. You are setting up a hook that
+enforces a path restriction, and the…

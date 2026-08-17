@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:58,152
+The observability and hook mechanisms you
+have now do more than hold a budget. The…
+
+2
+00:00:58,152 --> 00:01:56,280
+When an agent fetches a web page, a
+document, or a tool result, instructions…
+
+3
+00:01:56,280 --> 00:02:55,368
+Trusting your own users does not solve the
+problem, because the hostile instruction…
+
+4
+00:02:55,368 --> 00:03:53,448
+This helps, but it remains a soft
+boundary, because the untrusted content…
+
+5
+00:03:53,448 --> 00:04:46,560
+An injection can be indirect, planted in
+content the agent will read later rather…
+
+6
+00:04:46,560 --> 00:05:43,512
+They are different targets, but the
+layered defense has the same approach:…
+
+7
+00:05:43,512 --> 00:06:20,328
+Secrets belong in environment variables or
+a secret manager, never in committed…
+
+8
+00:06:20,328 --> 00:07:31,224
+Here, it is about limiting what a
+connected agent can reach. # secret comes…
+
+9
+00:07:31,224 --> 00:08:31,560
+What happens next is bounded entirely by
+what the agent's identity is allowed to…
+
+10
+00:08:31,560 --> 00:09:28,392
+It lives in repository history so even
+after you remove it from the current…
+
+11
+00:09:28,392 --> 00:10:41,328
+The distinction that matters in regulated
+environment is simple: a rule that lives…
+
+12
+00:10:41,328 --> 00:11:42,360
+As a result, the control and its evidence
+exist before a reviewer ever asks. When…
+
+13
+00:11:42,360 --> 00:12:41,088
+One model-specific constraint to name
+early: Zero data retention (ZDR)…
+
+14
+00:12:41,088 --> 00:13:28,920
+Data residency is about where the data is
+physically stored: which region processes…
+
+15
+00:13:28,920 --> 00:14:26,256
+Managed configuration is about whether an
+administrator can define and control the…
+
+16
+00:14:26,256 --> 00:15:17,304
+The regulated-review scoping makes the
+whole arrangement understandable to…
+
+17
+00:15:17,304 --> 00:16:03,744
+Filesystem isolation restricts the agent
+to its working directory regardless of…
+
+18
+00:16:03,744 --> 00:16:55,368
+The defense checklist you can keep open
+while you build ThreatWhere it entersThe…
+
+19
+00:16:55,368 --> 00:17:58,080
+Sandbox escapeA steered agent attempting
+filesystem or network access outside its…
+
+20
+00:17:58,080 --> 00:18:07,848
+If it must hold, enforce it with a hook,
+not a prompt.
+
+21
+00:18:07,848 --> 00:19:00,552
+Setup Your agent fetches web pages and can
+write to a single file path. Your users…
+
+22
+00:19:00,552 --> 00:19:57,792
+The page had a line, near the bottom,
+telling the agent to write its summary to…
+
+23
+00:19:57,792 --> 00:20:10,872
+The trust placed in the user did nothing
+because the injection arrived through the…
+
+24
+00:20:10,872 --> 00:21:17,928
+The scenario is an agent that fetches
+untrusted web content and writes to a…

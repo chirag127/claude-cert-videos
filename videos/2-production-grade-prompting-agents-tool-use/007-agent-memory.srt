@@ -1,0 +1,89 @@
+1
+00:00:00,000 --> 00:00:54,024
+The agent from the previous section runs
+correctly within a single session. What it…
+
+2
+00:00:54,024 --> 00:01:33,672
+Memory scope, covered next, is the pattern
+that decides what state survives once the…
+
+3
+00:01:33,672 --> 00:02:30,696
+ScopeWhat persistsCostWhen to useWhat you
+lose In-context memoryState lives in the…
+
+4
+00:02:30,696 --> 00:03:26,208
+Summarized memoryA condensed version of
+prior conversation is generated and…
+
+5
+00:03:26,208 --> 00:04:24,960
+Choosing a memory scope at agent design
+time The choice of how an agent remembers…
+
+6
+00:04:24,960 --> 00:05:23,280
+At that point, you need to refactor: pull
+conversation state out of the live…
+
+7
+00:05:23,280 --> 00:06:20,688
+Use stateless when each job is
+self-contained. Use in-context when the…
+
+8
+00:06:20,688 --> 00:07:15,288
+Skills: reusable instruction sets that
+load on demand without inflating every…
+
+9
+00:07:15,288 --> 00:08:12,552
+When you send a request, Claude reads the
+name and description of every available…
+
+10
+00:08:12,552 --> 00:09:13,992
+A Skill, by contrast, loads only when the
+task calls for it, in both environments.…
+
+11
+00:09:13,992 --> 00:10:12,864
+Examples include coding conventions the
+team has standardized on, output format…
+
+12
+00:10:12,864 --> 00:11:09,768
+Skills invoked this way run inside the
+code execution container rather than in…
+
+13
+00:11:09,768 --> 00:11:33,552
+If the subagent needs a Skill, you must
+explicitly list it in the subagent's…
+
+14
+00:11:33,552 --> 00:12:29,256
+Setup The agent runs perfectly in
+development because you are running it in…
+
+15
+00:12:29,256 --> 00:13:23,376
+Combined with the system prompt and
+registered tool schemas, over 45,000…
+
+16
+00:13:23,376 --> 00:13:48,480
+What to Watch Out for Development used a
+single long session. Production used many…
+
+17
+00:13:48,480 --> 00:14:31,368
+Read the three agent use cases below.
+Match each agent use case on the left to…
+
+18
+00:14:31,368 --> 00:15:12,768
+Each job is fully independent.In-context
+memory: all state lives in the active…

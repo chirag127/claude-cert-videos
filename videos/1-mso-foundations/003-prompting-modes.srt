@@ -1,0 +1,9 @@
+1
+00:00:00,000 --> 00:00:33,624
+Separate from how you word a prompt is how
+many worked examples you give the model…
+
+2
+00:00:33,624 --> 00:01:17,376
+Each example you add costs tokens on every
+call and consumes context budget, so the…

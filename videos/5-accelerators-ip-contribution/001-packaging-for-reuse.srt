@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:53,856
+You finished the prior modules with a
+build that runs: an agent loop, a…
+
+2
+00:00:53,856 --> 00:01:50,520
+Packaging for reuse while the build is
+fresh is cheaper than reconstructing the…
+
+3
+00:01:50,520 --> 00:02:40,056
+MCP Server PackageThe tools the server
+exposes, with their inputs and the scope…
+
+4
+00:02:40,056 --> 00:03:37,944
+The scripts run, so they look reusable,
+but every customer-specific value is…
+
+5
+00:03:37,944 --> 00:04:28,272
+The packaging checklist Keep this
+checklist next to the build while you…
+
+6
+00:04:28,272 --> 00:05:13,848
+Eval SuiteThresholds and dataset paths
+that change per customer or…
+
+7
+00:05:13,848 --> 00:06:07,944
+Setup Hardcoding ships faster and you were
+working under a deadline, so you hardcoded…
+
+8
+00:06:07,944 --> 00:07:00,768
+They could not configure it, because there
+was nothing to configure. Every value that…
+
+9
+00:07:00,768 --> 00:07:35,088
+What to Watch Out for A template that runs
+has not been packaged for reuse. These are…

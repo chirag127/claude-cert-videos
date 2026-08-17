@@ -1,0 +1,109 @@
+1
+00:00:00,000 --> 00:01:00,288
+Previously, we covered the mechanisms that
+give Claude Code durable context and…
+
+2
+00:01:00,288 --> 00:01:58,440
+What changes across the three isn’t the
+file itself; it’s where the skill runs,…
+
+3
+00:01:58,440 --> 00:03:01,800
+Requires code-execution and skills beta
+headers. Where the steps run: Inside…
+
+4
+00:03:01,800 --> 00:04:07,176
+What you need to know: The common
+surprise: a skill that worked in Claude…
+
+5
+00:04:07,176 --> 00:04:59,712
+Skills are attached when defining the
+agent resource, not at session time.…
+
+6
+00:04:59,712 --> 00:05:57,720
+This was true in Module 2, and is still
+true here: a subagent starts clean, so a…
+
+7
+00:05:57,720 --> 00:06:57,240
+For instructions that must apply to every
+session in a project, CLAUDE.md is still…
+
+8
+00:06:57,240 --> 00:07:58,632
+This is why two plugins can both ship a
+run-tests command without colliding.…
+
+9
+00:07:58,632 --> 00:08:55,248
+The plugin places components as follows:
+Skills go in a skills directory. Hooks,…
+
+10
+00:08:55,248 --> 00:09:51,456
+The precedence comes from the deployment
+scope: because managed settings sit above…
+
+11
+00:09:51,456 --> 00:10:45,912
+Custom commandA named shortcut that runs a
+defined procedure when you invoke it…
+
+12
+00:10:45,912 --> 00:11:41,088
+The question to ask is whether you want to
+pay the setup cost once, as you do with a…
+
+13
+00:11:41,088 --> 00:12:36,168
+Try it now. Three teams want to reuse the
+same review-checklist skill in different…
+
+14
+00:12:36,168 --> 00:13:27,912
+Write the skill so its steps do not depend
+on local files, because it will run in…
+
+15
+00:13:27,912 --> 00:14:20,928
+Write the skill so its steps do not depend
+on local files, because it will run in…
+
+16
+00:14:20,928 --> 00:15:17,160
+Write the skill so its steps do not depend
+on local files, because it will run in…
+
+17
+00:15:17,160 --> 00:15:35,592
+Write the skill so its steps do not depend
+on local files, because it will run in…
+
+18
+00:15:35,592 --> 00:16:30,888
+Setup A plugin installed cleanly tells you
+the package was assembled correctly;…
+
+19
+00:16:30,888 --> 00:17:27,744
+The root cause sat in the skill’s
+SKILL.md, in a command that pointed at…
+
+20
+00:17:27,744 --> 00:18:19,560
+It sits in the SKILL.md as plain text, and
+a reviewer reading the file can catch it.…
+
+21
+00:18:19,560 --> 00:18:53,880
+Make sure any scripts, config files, or
+other assets the plugin depends on are…
+
+22
+00:18:53,880 --> 00:19:05,616
+Try it now. The following SKILL.md works
+on the author’s machine but will fail when…
