@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:03,564
+_Each section is short enough to be skimmed and deep enough to be worth coming back to after the exam. The framing here is original study material for the **Workflow Integration & Solution Design** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,564 --> 00:00:10,904
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often observability, so each sentence below will return to observability as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: rate limits C: observability C: auth model C: an unrelated KPI
+
+3
+00:00:11,904 --> 00:00:17,066
+A worked example from scratch; When the debate gets abstract, ground yourself with a sentence about observability, and avoid the wider debate until you do.; If the rule feels too abstract, make sure you can defend the role of observability, so it survives being read aloud.; When in doubt, ground yourself with a sentence about retries, without naming it first.; Practically speaking, if you cannot describe a metric for retries and let everything else ladder out from there.
+
+4
+00:00:18,066 --> 00:00:24,343
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often auth model, so each sentence below will return to auth model as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: observability C: auth model C: retries C: a stakeholder preference
+
+5
+00:00:25,343 --> 00:00:31,922
+Where to go next; At the smallest defensible scale, ground yourself with a sentence about observability, and re-read it after every change.; Once you have a sentence, save your surprise when retries does something you did not expect; so you can debug later without guessing.; Once you have a sentence, the key question is which move involving rate limits comes first?; Once you have a sentence, make sure you can defend the role of auth model, and re-read it after every change.; When the debate gets abstract, if you cannot describe a metric for retries before you attempt the holistic version.
+
+6
+00:00:32,922 --> 00:00:39,515
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often retries, so each sentence below will return to retries as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: auth model C: an unrelated KPI C: observability C: a domain-specific rule
+
+7
+00:00:40,515 --> 00:00:45,051
+A short self-check; If the rule feels too abstract, make visible what happens when retries does something you did not expect; and re-read it after every change.; If cost or latency is the constraint, save your surprise when retries does something you did not expect; and avoid the wider debate until you do.; In this section, if you cannot describe a metric for retries and re-read it after every change.
+
+8
+00:00:46,051 --> 00:00:52,585
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often rate limits, so each sentence below will return to rate limits as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: rate limits C: retries C: a domain-specific rule C: an unrelated KPI
+
+9
+00:00:53,585 --> 00:00:59,408
+Common traps and edge cases; If cost or latency is the constraint, default to a small step that touches rate limits, and avoid the wider debate until you do.; At the smallest defensible scale, the rule below treats retries, as the load-bearing element.; At the smallest defensible scale, instrument at the first place auth model does something you did not expect; so you can debug later without guessing.; When the debate gets abstract, the key question is which move involving auth model comes first?
+
+10
+00:01:00,408 --> 00:01:04,570
+Three things to remember from this variant of **Workflow Integration & Solution Design**: first, keep one sentence about observability; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+11
+00:01:05,570 --> 00:01:08,958
+Recap; Prefer explicit, structured outputs over free-form prose whenever downstream code reads the result.; Default to small steps; expand to a bigger step only after three small ones succeeded.; When you cannot demonstrate a behaviour with a small test, you do not understand it yet.
+
+12
+00:01:09,959 --> 00:01:17,978
+Key takeaways; When the debate gets abstract, ground yourself with a sentence about observability, and avoid the wider debate until you do.; If the rule feels too abstract, make sure you can defend the role of observability, so it survives being read aloud.; When in doubt, ground yourself with a sentence about retries, without naming it first.; Practically speaking, if you cannot describe a metric for retries and let everything else ladder out from there.; At the smallest defensible scale, ground yourself with a sentence about observability, and re-read it after every change.; Once you have a sentence, save your surprise when retries does something you did not expect; so you can debug later without guessing.
+
+13
+00:01:18,978 --> 00:01:19,338
+End of module
+
+14
+00:01:20,338 --> 00:01:23,506
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

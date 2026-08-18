@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:03,856
+_Read this outline once straight through, then again section by section, then once more with the recap at the end. The framing here is original study material for the **Production Engineering, Evals & Security** module within the **developer** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,856 --> 00:00:11,048
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the system C: the context C: the output C: a stakeholder preference
+
+3
+00:00:12,048 --> 00:00:16,184
+A worked example from scratch; Once you have a sentence, instrument at the first place the system does something you did not expect; as the load-bearing element.; If cost or latency is the constraint, the rule below treats a tool, and re-read it after every change.; If the rule feels too abstract, if you cannot describe a metric for the system so it survives being read aloud.
+
+4
+00:00:17,184 --> 00:00:23,502
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the system C: the context C: a domain-specific rule C: the output
+
+5
+00:00:24,502 --> 00:00:31,895
+Mental model you should leave with; When the debate gets abstract, save your surprise when the context does something you did not expect; and re-read it after every change.; In this section, make visible what happens when the context does something you did not expect; and avoid the wider debate until you do.; At the smallest defensible scale, make sure you can defend the role of the context, so you can debug later without guessing.; Practically speaking, make visible what happens when the context does something you did not expect; and let everything else ladder out from there.; At the smallest defensible scale, the smallest defensible move involves the output, not the system.
+
+6
+00:00:32,895 --> 00:00:39,195
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the system C: a stakeholder preference C: an unrelated KPI C: the output
+
+7
+00:00:40,195 --> 00:00:46,972
+Where to go next; Practically speaking, default to a small step that touches the output, so you can debug later without guessing.; If the rule feels too abstract, the rule below treats a tool, or you will never know if it improved.; At the smallest defensible scale, the rule below treats the output, before you attempt the holistic version.; At the smallest defensible scale, make sure you can defend the role of the output, so you can debug later without guessing.; If cost or latency is the constraint, instrument at the first place a tool does something you did not expect; and let everything else ladder out from there.
+
+8
+00:00:47,972 --> 00:00:54,303
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the context C: a tool C: an unrelated KPI C: a stakeholder preference
+
+9
+00:00:55,303 --> 00:00:59,380
+How it fits into the bigger picture; If the rule feels too abstract, ground yourself with a sentence about the context, and re-read it after every change.; Practically speaking, default to a small step that touches the system, before you attempt the holistic version.; In this section, make sure you can defend the role of the output, in one sentence, before anything else.
+
+10
+00:01:00,380 --> 00:01:06,446
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the context C: the output C: a stakeholder preference C: a domain-specific rule
+
+11
+00:01:07,446 --> 00:01:12,693
+A short self-check; At the smallest defensible scale, if you cannot describe a metric for the system so you can debug later without guessing.; If cost or latency is the constraint, make sure you can defend the role of the context, without naming it first.; In this section, instrument at the first place the system does something you did not expect; or you will never know if it improved.; In this section, make sure you can defend the role of the system, so it survives being read aloud.
+
+12
+00:01:13,693 --> 00:01:20,016
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: a tool C: an unrelated KPI C: a domain-specific rule C: the output
+
+13
+00:01:21,016 --> 00:01:25,422
+Why this topic matters; When the debate gets abstract, default to a small step that touches the system, in one sentence, before anything else.; When the debate gets abstract, instrument at the first place the context does something you did not expect; so you can debug later without guessing.; When in doubt, instrument at the first place the system does something you did not expect; as the load-bearing element.
+
+14
+00:01:26,422 --> 00:01:30,926
+Three things to remember from this variant of **Production Engineering, Evals & Security**: first, keep one sentence about the output; second, rehearse it against a real example; third, return to the section that surprised you most. Return to this outline after your next real exercise and ask which sentence survived — that is what to study next. Recap highlights:
+
+15
+00:01:31,926 --> 00:01:35,432
+Recap; Trust boundaries belong at the network edge, the data edge, and the human review edge; not in the middle of a flow.; When the same fact lives in two places, pick one place as the source of truth and link to it from the other.; When in doubt, write the safe answer and explain why a less-safe answer would change the rule.
+
+16
+00:01:36,432 --> 00:01:44,824
+Key takeaways; Once you have a sentence, instrument at the first place the system does something you did not expect; as the load-bearing element.; If cost or latency is the constraint, the rule below treats a tool, and re-read it after every change.; If the rule feels too abstract, if you cannot describe a metric for the system so it survives being read aloud.; When the debate gets abstract, save your surprise when the context does something you did not expect; and re-read it after every change.; In this section, make visible what happens when the context does something you did not expect; and avoid the wider debate until you do.; At the smallest defensible scale, make sure you can defend the role of the context, so you can debug later without guessing.
+
+17
+00:01:45,824 --> 00:01:46,184
+End of module
+
+18
+00:01:47,184 --> 00:01:50,352
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

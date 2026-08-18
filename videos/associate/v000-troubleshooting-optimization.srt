@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:03,672
+_Read this outline once straight through, then again section by section, then once more with the recap at the end. The framing here is original study material for the **Troubleshooting & Optimization** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,672 --> 00:00:10,954
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the prompt, so each sentence below will return to the prompt as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the prompt C: a sub-agent C: an unrelated KPI C: a stakeholder preference
+
+3
+00:00:11,954 --> 00:00:18,186
+Where to go next; In this section, the key question is which move involving the prompt comes first?; If cost or latency is the constraint, the rule below treats a sub-agent, or you will never know if it improved.; If the rule feels too abstract, the key question is which move involving a tool comes first?; When the debate gets abstract, save your surprise when the context does something you did not expect; and re-read it after every change.; If the rule feels too abstract, if you cannot describe a metric for a sub-agent and re-read it after every change.
+
+4
+00:00:19,186 --> 00:00:25,725
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the prompt C: a domain-specific rule C: a stakeholder preference C: an unrelated KPI
+
+5
+00:00:26,725 --> 00:00:33,686
+Mental model you should leave with; If cost or latency is the constraint, ground yourself with a sentence about a sub-agent, so it survives being read aloud.; In this section, instrument at the first place a sub-agent does something you did not expect; as the load-bearing element.; In this section, instrument at the first place the prompt does something you did not expect; and avoid the wider debate until you do.; If cost or latency is the constraint, save your surprise when the prompt does something you did not expect; without naming it first.; Practically speaking, make sure you can defend the role of a sub-agent, as the load-bearing element.
+
+6
+00:00:34,686 --> 00:00:40,815
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the context C: an unrelated KPI C: a stakeholder preference C: a domain-specific rule
+
+7
+00:00:41,815 --> 00:00:45,312
+Why this topic matters; When in doubt, default to a small step that touches the prompt, without naming it first.; When in doubt, if you cannot describe a metric for a sub-agent as the load-bearing element.; In this section, make visible what happens when a tool does something you did not expect; as the load-bearing element.
+
+8
+00:00:46,312 --> 00:00:52,540
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the prompt, so each sentence below will return to the prompt as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: a sub-agent C: a tool C: a stakeholder preference C: a domain-specific rule
+
+9
+00:00:53,540 --> 00:00:58,787
+Core vocabulary; In this section, default to a small step that touches a tool, in one sentence, before anything else.; Once you have a sentence, instrument at the first place a sub-agent does something you did not expect; before you attempt the holistic version.; When in doubt, if you cannot describe a metric for the context in one sentence, before anything else.; When the debate gets abstract, ground yourself with a sentence about the prompt, and let everything else ladder out from there.
+
+10
+00:00:59,787 --> 00:01:03,724
+Three things to remember from this variant of **Troubleshooting & Optimization**: first, keep one sentence about a tool; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+11
+00:01:04,724 --> 00:01:08,090
+Recap; A reusable pattern earns the right to be reused by being reused at least twice.; Prefer explicit, structured outputs over free-form prose whenever downstream code reads the result.; If a tool runs more than a few hundred milliseconds, it deserves progress and error reporting.
+
+12
+00:01:09,090 --> 00:01:16,695
+Key takeaways; In this section, the key question is which move involving the prompt comes first?; If cost or latency is the constraint, the rule below treats a sub-agent, or you will never know if it improved.; If the rule feels too abstract, the key question is which move involving a tool comes first?; When the debate gets abstract, save your surprise when the context does something you did not expect; and re-read it after every change.; If the rule feels too abstract, if you cannot describe a metric for a sub-agent and re-read it after every change.; If cost or latency is the constraint, ground yourself with a sentence about a sub-agent, so it survives being read aloud.
+
+13
+00:01:17,695 --> 00:01:18,055
+End of module
+
+14
+00:01:19,055 --> 00:01:22,223
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

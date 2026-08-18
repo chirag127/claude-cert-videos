@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:04,144
+_The shape of this outline is modular: if you only have ten minutes, read the recap at the end and the section that interests you. The framing here is original study material for the **Stakeholder Engagement, Lifecycle & GTM** module within the **architect-professional** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:05,144 --> 00:00:11,314
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the context C: the output C: a domain-specific rule C: the system
+
+3
+00:00:12,314 --> 00:00:18,699
+Why this topic matters; In this section, instrument at the first place the output does something you did not expect; as the load-bearing element.; If the rule feels too abstract, save your surprise when the context does something you did not expect; without naming it first.; In this section, the key question is which move involving a tool comes first?; If the rule feels too abstract, if you cannot describe a metric for the context and avoid the wider debate until you do.; Practically speaking, make sure you can defend the role of the context, so you can debug later without guessing.
+
+4
+00:00:19,699 --> 00:00:26,085
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the context C: a tool C: an unrelated KPI C: a domain-specific rule
+
+5
+00:00:27,085 --> 00:00:32,737
+Common traps and edge cases; At the smallest defensible scale, the rule below treats the context, before you attempt the holistic version.; At the smallest defensible scale, instrument at the first place the system does something you did not expect; without naming it first.; In this section, make sure you can defend the role of the output, and re-read it after every change.; Once you have a sentence, instrument at the first place the system does something you did not expect; and re-read it after every change.
+
+6
+00:00:33,737 --> 00:00:40,073
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the system C: the output C: a domain-specific rule C: an unrelated KPI
+
+7
+00:00:41,073 --> 00:00:46,932
+A worked example from scratch; In this section, make sure you can defend the role of the context, before you attempt the holistic version.; In this section, make visible what happens when the system does something you did not expect; so it survives being read aloud.; If the rule feels too abstract, instrument at the first place a tool does something you did not expect; and let everything else ladder out from there.; When in doubt, save your surprise when the output does something you did not expect; in one sentence, before anything else.
+
+8
+00:00:47,932 --> 00:00:53,953
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the system C: a domain-specific rule C: a tool C: a stakeholder preference
+
+9
+00:00:54,953 --> 00:00:59,151
+Mental model you should leave with; At the smallest defensible scale, default to a small step that touches the context, so it survives being read aloud.; When in doubt, ground yourself with a sentence about the system, before you attempt the holistic version.; Once you have a sentence, make sure you can defend the role of the context, in one sentence, before anything else.
+
+10
+00:01:00,151 --> 00:01:06,384
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the output C: the system C: an unrelated KPI C: a domain-specific rule
+
+11
+00:01:07,384 --> 00:01:12,518
+Where to go next; In this section, the smallest defensible move involves the output, not the system.; Once you have a sentence, the smallest defensible move involves the context, not the system.; If cost or latency is the constraint, ground yourself with a sentence about a tool, and avoid the wider debate until you do.; If cost or latency is the constraint, save your surprise when the context does something you did not expect; and re-read it after every change.
+
+12
+00:01:13,518 --> 00:01:17,717
+Three things to remember from this variant of **Stakeholder Engagement, Lifecycle & GTM**: first, keep one sentence about the context; second, rehearse it against a real example; third, return to the section that surprised you most. Carry one sentence, not five: the one you would actually say in a meeting tomorrow. Recap highlights:
+
+13
+00:01:18,717 --> 00:01:21,911
+Recap; Save the structure of every interaction that goes wrong — those are the seeds of your evaluation set.; Lead with the user's question and the smallest unit of value they need back.; When the same fact lives in two places, pick one place as the source of truth and link to it from the other.
+
+14
+00:01:22,912 --> 00:01:30,431
+Key takeaways; In this section, instrument at the first place the output does something you did not expect; as the load-bearing element.; If the rule feels too abstract, save your surprise when the context does something you did not expect; without naming it first.; In this section, the key question is which move involving a tool comes first?; If the rule feels too abstract, if you cannot describe a metric for the context and avoid the wider debate until you do.; Practically speaking, make sure you can defend the role of the context, so you can debug later without guessing.; At the smallest defensible scale, the rule below treats the context, before you attempt the holistic version.
+
+15
+00:01:31,431 --> 00:01:31,791
+End of module
+
+16
+00:01:32,791 --> 00:01:35,959
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

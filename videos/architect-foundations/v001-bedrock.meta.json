@@ -1,0 +1,9 @@
+{
+  "track": "architect-foundations",
+  "module": "v001-bedrock",
+  "title": "Claude with Amazon Bedrock",
+  "slides": 14,
+  "duration_sec": 80.02,
+  "mp4": "videos\\architect-foundations\\v001-bedrock.mp4",
+  "srt": "videos\\architect-foundations\\v001-bedrock.srt"
+}

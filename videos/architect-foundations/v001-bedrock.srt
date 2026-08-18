@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:03,888
+_The shape of this outline is modular: if you only have ten minutes, read the recap at the end and the section that interests you. The framing here is original study material for the **Claude with Amazon Bedrock** module within the **architect-foundations** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,888 --> 00:00:10,765
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the context C: the output C: a stakeholder preference C: a tool
+
+3
+00:00:11,765 --> 00:00:18,668
+Where to go next; When the debate gets abstract, make sure you can defend the role of the context, and re-read it after every change.; Once you have a sentence, make visible what happens when the context does something you did not expect; and avoid the wider debate until you do.; If cost or latency is the constraint, the rule below treats the system, and avoid the wider debate until you do.; Once you have a sentence, if you cannot describe a metric for the output so it survives being read aloud.; At the smallest defensible scale, ground yourself with a sentence about the output, and avoid the wider debate until you do.
+
+4
+00:00:19,668 --> 00:00:25,878
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the context C: the output C: a stakeholder preference C: an unrelated KPI
+
+5
+00:00:26,878 --> 00:00:30,550
+Core vocabulary; Practically speaking, make sure you can defend the role of the system, and let everything else ladder out from there.; Practically speaking, the key question is which move involving a tool comes first?; When in doubt, make visible what happens when a tool does something you did not expect; and let everything else ladder out from there.
+
+6
+00:00:31,550 --> 00:00:37,953
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the system C: a stakeholder preference C: an unrelated KPI C: a tool
+
+7
+00:00:38,953 --> 00:00:42,954
+A short self-check; When the debate gets abstract, make sure you can defend the role of the output, and let everything else ladder out from there.; If cost or latency is the constraint, make sure you can defend the role of the system, and let everything else ladder out from there.; Practically speaking, make sure you can defend the role of the context, as the load-bearing element.
+
+8
+00:00:43,954 --> 00:00:50,245
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: a tool C: a domain-specific rule C: the context C: the output
+
+9
+00:00:51,245 --> 00:00:55,394
+Why this topic matters; In this section, make visible what happens when a tool does something you did not expect; and avoid the wider debate until you do.; If the rule feels too abstract, the key question is which move involving the output comes first?; If cost or latency is the constraint, ground yourself with a sentence about the context, without naming it first.
+
+10
+00:00:56,394 --> 00:01:00,381
+Three things to remember from this variant of **Claude with Amazon Bedrock**: first, keep one sentence about the output; second, rehearse it against a real example; third, return to the section that surprised you most. The fastest way to validate this outline is to teach one of its points to a colleague and watch their face. Recap highlights:
+
+11
+00:01:01,381 --> 00:01:04,553
+Recap; When the same bug keeps reappearing, fix the pattern, not the instance.; When the same fact lives in two places, pick one place as the source of truth and link to it from the other.; The cheapest possible evaluation beats a perfect evaluation that never runs.
+
+12
+00:01:05,553 --> 00:01:13,491
+Key takeaways; When the debate gets abstract, make sure you can defend the role of the context, and re-read it after every change.; Once you have a sentence, make visible what happens when the context does something you did not expect; and avoid the wider debate until you do.; If cost or latency is the constraint, the rule below treats the system, and avoid the wider debate until you do.; Once you have a sentence, if you cannot describe a metric for the output so it survives being read aloud.; At the smallest defensible scale, ground yourself with a sentence about the output, and avoid the wider debate until you do.; Practically speaking, make sure you can defend the role of the system, and let everything else ladder out from there.
+
+13
+00:01:14,491 --> 00:01:14,851
+End of module
+
+14
+00:01:15,851 --> 00:01:19,019
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

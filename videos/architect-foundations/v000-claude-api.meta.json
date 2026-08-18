@@ -1,0 +1,9 @@
+{
+  "track": "architect-foundations",
+  "module": "v000-claude-api",
+  "title": "Building with the Claude API",
+  "slides": 16,
+  "duration_sec": 100.47,
+  "mp4": "videos\\architect-foundations\\v000-claude-api.mp4",
+  "srt": "videos\\architect-foundations\\v000-claude-api.srt"
+}

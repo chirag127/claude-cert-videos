@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Claude Certified Architect (Professional) — original study path — interactive course</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:#0f172a;color:#f1f5f9}
+header{padding:32px 40px;background:linear-gradient(135deg,#1e3a8a 0%,#0f172a 100%)}
+h1{margin:0;font-size:28px}
+.sub{color:#cbd5e1;margin-top:8px;font-size:14px}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:0;min-height:calc(100vh - 100px)}
+nav{background:#1e293b;padding:20px;border-right:1px solid #334155}
+nav h3{font-size:13px;text-transform:uppercase;color:#94a3b8;margin:0 0 10px}
+nav a{display:flex;gap:10px;padding:8px 10px;color:#e2e8f0;text-decoration:none;border-radius:8px;font-size:14px}
+nav a:hover{background:#334155}
+nav a.active{background:#1e40af}
+.tag{font-size:11px;background:#475569;color:#f1f5f9;border-radius:4px;padding:2px 6px}
+main{padding:32px 40px}
+summary{font-size:14px;color:#cbd5e1;max-width:760px;white-space:pre-wrap}
+.module-card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px;margin:18px 0}
+.module-card h2{margin:0 0 6px;font-size:18px}
+.module-card p{margin:0 0 10px;color:#cbd5e1;font-size:13px}
+.module-card .links a{margin-right:12px;color:#60a5fa;text-decoration:none;font-size:13px}
+video{width:100%;max-width:760px;border-radius:12px;margin-top:18px;background:#000}
+.tabs{display:flex;gap:6px;margin:18px 0}
+.tab{padding:8px 14px;border:1px solid #334155;border-radius:8px;cursor:pointer;font-size:13px;background:#1e293b}
+.tab.active{background:#1e40af;border-color:#3b82f6}
+iframe{width:100%;height:520px;border:1px solid #334155;border-radius:12px;background:#0b1224}
+.progress{background:#1e293b;padding:14px 18px;border-radius:10px;margin-bottom:20px;font-size:14px}
+input[type=checkbox]{transform:scale(1.2);margin-right:8px}
+.tools{display:flex;gap:8px;margin:12px 0}
+button{background:#1e293b;color:#f1f5f9;border:1px solid #334155;border-radius:8px;padding:8px 14px;cursor:pointer}
+</style></head><body>
+<header>
+  <h1>Claude Certified Architect (Professional) — original study path</h1>
+  <div class="sub">Original study material · TTS-narrated videos · interactive flashcards &amp; quizzes</div>
+</header>
+<div class="layout">
+  <nav>
+    <h3>Modules</h3>
+    <a href="#m1" onclick="showModule('m1');return false" data-mod="m1"><span style="flex:1">1. v000 claude platform solution design</span><span class="tag">video</span></a>
+    <a href="#m2" onclick="showModule('m2');return false" data-mod="m2"><span style="flex:1">2. v000 enterprise integration production</span><span class="tag">video</span></a>
+    <a href="#m3" onclick="showModule('m3');return false" data-mod="m3"><span style="flex:1">3. v000 responsible ai safety risk</span><span class="tag">video</span></a>
+    <a href="#m4" onclick="showModule('m4');return false" data-mod="m4"><span style="flex:1">4. v000 stakeholder engagement lifecycle gtm</span><span class="tag">video</span></a>
+    <a href="#m5" onclick="showModule('m5');return false" data-mod="m5"><span style="flex:1">5. v000 team enablement operational productivity</span><span class="tag">video</span></a>
+    <a href="#m6" onclick="showModule('m6');return false" data-mod="m6"><span style="flex:1">6. v001 claude platform solution design</span><span class="tag">video</span></a>
+    <a href="#m7" onclick="showModule('m7');return false" data-mod="m7"><span style="flex:1">7. v001 enterprise integration production</span><span class="tag">video</span></a>
+    <a href="#m8" onclick="showModule('m8');return false" data-mod="m8"><span style="flex:1">8. v001 responsible ai safety risk</span><span class="tag">video</span></a>
+    <a href="#m9" onclick="showModule('m9');return false" data-mod="m9"><span style="flex:1">9. v001 stakeholder engagement lifecycle gtm</span><span class="tag">video</span></a>
+    <a href="#m10" onclick="showModule('m10');return false" data-mod="m10"><span style="flex:1">10. v001 team enablement operational productivity</span><span class="tag">video</span></a>
+    <a href="#m11" onclick="showModule('m11');return false" data-mod="m11"><span style="flex:1">11. v002 claude platform solution design</span><span class="tag">video</span></a>
+    <a href="#m12" onclick="showModule('m12');return false" data-mod="m12"><span style="flex:1">12. v002 enterprise integration production</span><span class="tag">video</span></a>
+    <a href="#m13" onclick="showModule('m13');return false" data-mod="m13"><span style="flex:1">13. v002 responsible ai safety risk</span><span class="tag">video</span></a>
+    <a href="#m14" onclick="showModule('m14');return false" data-mod="m14"><span style="flex:1">14. v002 stakeholder engagement lifecycle gtm</span><span class="tag">video</span></a>
+    <a href="#m15" onclick="showModule('m15');return false" data-mod="m15"><span style="flex:1">15. v002 team enablement operational productivity</span><span class="tag">video</span></a>
+  </nav>
+  <main>
+    <div class="progress">
+      <strong>Track progress:</strong> <span id="progressCount">0</span> / 15 modules completed
+      <br><small>Click a checkbox on each module; your progress saves in this browser only.</small>
+    </div>
+    <div class="tools">
+      <button onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=true);updateProgress()">Mark all complete</button>
+      <button onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false);updateProgress()">Reset</button>
+    </div>
+    <summary>An original professional-level study path: solution design, enterprise integration and production hardening, responsible AI safety and risk architecture, stakeholder engagement and lifecycle, and team enablement.</summary>
+    <section id="m1" style="display:none">
+            <div class="module-card">
+              <h2>1. Claude Platform &amp; Solution Design</h2>
+              <p>Source outline: <code>content/architect-professional/v000-claude-platform-solution-design.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v000-claude-platform-solution-design.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v000-claude-platform-solution-design.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v000-claude-platform-solution-design.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v000-claude-platform-solution-design.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m2" style="display:none">
+            <div class="module-card">
+              <h2>2. Enterprise Integration &amp; Production</h2>
+              <p>Source outline: <code>content/architect-professional/v000-enterprise-integration-production.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v000-enterprise-integration-production.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v000-enterprise-integration-production.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v000-enterprise-integration-production.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v000-enterprise-integration-production.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m3" style="display:none">
+            <div class="module-card">
+              <h2>3. Responsible AI, Safety &amp; Risk for Architects</h2>
+              <p>Source outline: <code>content/architect-professional/v000-responsible-ai-safety-risk.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v000-responsible-ai-safety-risk.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v000-responsible-ai-safety-risk.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v000-responsible-ai-safety-risk.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v000-responsible-ai-safety-risk.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m4" style="display:none">
+            <div class="module-card">
+              <h2>4. Stakeholder Engagement, Lifecycle &amp; GTM</h2>
+              <p>Source outline: <code>content/architect-professional/v000-stakeholder-engagement-lifecycle-gtm.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v000-stakeholder-engagement-lifecycle-gtm.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v000-stakeholder-engagement-lifecycle-gtm.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v000-stakeholder-engagement-lifecycle-gtm.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v000-stakeholder-engagement-lifecycle-gtm.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m5" style="display:none">
+            <div class="module-card">
+              <h2>5. Team Enablement &amp; Operational Productivity</h2>
+              <p>Source outline: <code>content/architect-professional/v000-team-enablement-operational-productivity.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v000-team-enablement-operational-productivity.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v000-team-enablement-operational-productivity.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v000-team-enablement-operational-productivity.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v000-team-enablement-operational-productivity.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m6" style="display:none">
+            <div class="module-card">
+              <h2>6. Claude Platform &amp; Solution Design</h2>
+              <p>Source outline: <code>content/architect-professional/v001-claude-platform-solution-design.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v001-claude-platform-solution-design.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v001-claude-platform-solution-design.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v001-claude-platform-solution-design.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v001-claude-platform-solution-design.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m7" style="display:none">
+            <div class="module-card">
+              <h2>7. Enterprise Integration &amp; Production</h2>
+              <p>Source outline: <code>content/architect-professional/v001-enterprise-integration-production.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v001-enterprise-integration-production.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v001-enterprise-integration-production.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v001-enterprise-integration-production.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v001-enterprise-integration-production.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m8" style="display:none">
+            <div class="module-card">
+              <h2>8. Responsible AI, Safety &amp; Risk for Architects</h2>
+              <p>Source outline: <code>content/architect-professional/v001-responsible-ai-safety-risk.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v001-responsible-ai-safety-risk.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v001-responsible-ai-safety-risk.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v001-responsible-ai-safety-risk.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v001-responsible-ai-safety-risk.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m9" style="display:none">
+            <div class="module-card">
+              <h2>9. Stakeholder Engagement, Lifecycle &amp; GTM</h2>
+              <p>Source outline: <code>content/architect-professional/v001-stakeholder-engagement-lifecycle-gtm.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v001-stakeholder-engagement-lifecycle-gtm.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v001-stakeholder-engagement-lifecycle-gtm.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v001-stakeholder-engagement-lifecycle-gtm.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v001-stakeholder-engagement-lifecycle-gtm.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m10" style="display:none">
+            <div class="module-card">
+              <h2>10. Team Enablement &amp; Operational Productivity</h2>
+              <p>Source outline: <code>content/architect-professional/v001-team-enablement-operational-productivity.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v001-team-enablement-operational-productivity.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v001-team-enablement-operational-productivity.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v001-team-enablement-operational-productivity.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v001-team-enablement-operational-productivity.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m11" style="display:none">
+            <div class="module-card">
+              <h2>11. Claude Platform &amp; Solution Design</h2>
+              <p>Source outline: <code>content/architect-professional/v002-claude-platform-solution-design.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v002-claude-platform-solution-design.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v002-claude-platform-solution-design.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v002-claude-platform-solution-design.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v002-claude-platform-solution-design.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m12" style="display:none">
+            <div class="module-card">
+              <h2>12. Enterprise Integration &amp; Production</h2>
+              <p>Source outline: <code>content/architect-professional/v002-enterprise-integration-production.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v002-enterprise-integration-production.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v002-enterprise-integration-production.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v002-enterprise-integration-production.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v002-enterprise-integration-production.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m13" style="display:none">
+            <div class="module-card">
+              <h2>13. Responsible AI, Safety &amp; Risk for Architects</h2>
+              <p>Source outline: <code>content/architect-professional/v002-responsible-ai-safety-risk.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v002-responsible-ai-safety-risk.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v002-responsible-ai-safety-risk.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v002-responsible-ai-safety-risk.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v002-responsible-ai-safety-risk.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m14" style="display:none">
+            <div class="module-card">
+              <h2>14. Stakeholder Engagement, Lifecycle &amp; GTM</h2>
+              <p>Source outline: <code>content/architect-professional/v002-stakeholder-engagement-lifecycle-gtm.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v002-stakeholder-engagement-lifecycle-gtm.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v002-stakeholder-engagement-lifecycle-gtm.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v002-stakeholder-engagement-lifecycle-gtm.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v002-stakeholder-engagement-lifecycle-gtm.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m15" style="display:none">
+            <div class="module-card">
+              <h2>15. Team Enablement &amp; Operational Productivity</h2>
+              <p>Source outline: <code>content/architect-professional/v002-team-enablement-operational-productivity.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-professional/v002-team-enablement-operational-productivity.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-professional/v002-team-enablement-operational-productivity.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-professional/v002-team-enablement-operational-productivity.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-professional/v002-team-enablement-operational-productivity.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+  </main>
+</div>
+<script>
+function updateProgress(){
+  const cbs=document.querySelectorAll('input[type=checkbox]');
+  let n=0; cbs.forEach(c=>{if(c.checked) n++});
+  document.getElementById('progressCount').textContent=n;
+}
+function showTab(card, name){
+  card.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  card.querySelectorAll('[data-pane]').forEach(p=>p.style.display='none');
+  card.querySelector(`[data-pane="${name}"]`).style.display='block';
+  card.querySelector(`.tab[data-tab="${name}"]`).classList.add('active');
+}
+function showModule(id){
+  document.querySelectorAll('section').forEach(s=>s.style.display='none');
+  document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+  document.getElementById(id).style.display='block';
+  document.querySelector(`nav a[data-mod="${id}"]`).classList.add('active');
+  try{history.replaceState(null,'','#'+id);}catch(e){}
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.card-root').forEach(c=>showTab(c,'video'));
+  const hash=location.hash.slice(1);
+  if(hash) showModule(hash);
+  document.querySelectorAll('input[type=checkbox]').forEach(c=>c.addEventListener('change',updateProgress));
+  updateProgress();
+});
+</script></body></html>

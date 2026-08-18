@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:03,748
+_Treat each section as a separate short drill — its job is to leave you with one sentence you can defend out loud. The framing here is original study material for the **Workflow Integration & Solution Design** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,748 --> 00:00:11,215
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often rate limits, so each sentence below will return to rate limits as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: rate limits C: auth model C: an unrelated KPI C: observability
+
+3
+00:00:12,215 --> 00:00:18,785
+Core vocabulary; In this section, instrument at the first place retries does something you did not expect; or you will never know if it improved.; When in doubt, the smallest defensible move involves observability, not auth model.; When in doubt, default to a small step that touches rate limits, and let everything else ladder out from there.; If the rule feels too abstract, instrument at the first place retries does something you did not expect; and let everything else ladder out from there.; In this section, default to a small step that touches observability, or you will never know if it improved.
+
+4
+00:00:19,785 --> 00:00:26,296
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often observability, so each sentence below will return to observability as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: retries C: observability C: auth model C: a stakeholder preference
+
+5
+00:00:27,296 --> 00:00:33,718
+Where to go next; Once you have a sentence, save your surprise when rate limits does something you did not expect; and let everything else ladder out from there.; In this section, the rule below treats auth model, and let everything else ladder out from there.; At the smallest defensible scale, the rule below treats observability, without naming it first.; At the smallest defensible scale, the key question is which move involving observability comes first?; Once you have a sentence, default to a small step that touches auth model, so you can debug later without guessing.
+
+6
+00:00:34,718 --> 00:00:41,072
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often auth model, so each sentence below will return to auth model as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: observability C: a stakeholder preference C: rate limits C: auth model
+
+7
+00:00:42,072 --> 00:00:48,129
+A worked example from scratch; Once you have a sentence, make visible what happens when observability does something you did not expect; in one sentence, before anything else.; At the smallest defensible scale, ground yourself with a sentence about rate limits, and re-read it after every change.; When in doubt, make visible what happens when rate limits does something you did not expect; and let everything else ladder out from there.; In this section, default to a small step that touches observability, and avoid the wider debate until you do.
+
+8
+00:00:49,129 --> 00:00:55,424
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often retries, so each sentence below will return to retries as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: rate limits C: a domain-specific rule C: a stakeholder preference C: an unrelated KPI
+
+9
+00:00:56,424 --> 00:01:01,869
+A short self-check; At the smallest defensible scale, make sure you can defend the role of rate limits, as the load-bearing element.; If cost or latency is the constraint, make sure you can defend the role of rate limits, and re-read it after every change.; In this section, make visible what happens when rate limits does something you did not expect; and avoid the wider debate until you do.; If the rule feels too abstract, the key question is which move involving observability comes first?
+
+10
+00:01:02,869 --> 00:01:09,250
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often observability, so each sentence below will return to observability as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: auth model C: a domain-specific rule C: rate limits C: retries
+
+11
+00:01:10,250 --> 00:01:16,352
+Why this topic matters; At the smallest defensible scale, if you cannot describe a metric for rate limits as the load-bearing element.; Once you have a sentence, the rule below treats auth model, as the load-bearing element.; When the debate gets abstract, default to a small step that touches auth model, without naming it first.; When in doubt, the rule below treats observability, in one sentence, before anything else.; When in doubt, save your surprise when rate limits does something you did not expect; so it survives being read aloud.
+
+12
+00:01:17,352 --> 00:01:21,452
+Three things to remember from this variant of **Workflow Integration & Solution Design**: first, keep one sentence about retries; second, rehearse it against a real example; third, return to the section that surprised you most. Carry one sentence, not five: the one you would actually say in a meeting tomorrow. Recap highlights:
+
+13
+00:01:22,452 --> 00:01:25,674
+Recap; Cost, latency, and reliability are first-class; treat them as design inputs, not afterthoughts.; When the same bug keeps reappearing, fix the pattern, not the instance.; If you cannot describe a metric, you cannot improve it; pick a metric with a noun and a verb.
+
+14
+00:01:26,674 --> 00:01:34,688
+Key takeaways; In this section, instrument at the first place retries does something you did not expect; or you will never know if it improved.; When in doubt, the smallest defensible move involves observability, not auth model.; When in doubt, default to a small step that touches rate limits, and let everything else ladder out from there.; If the rule feels too abstract, instrument at the first place retries does something you did not expect; and let everything else ladder out from there.; In this section, default to a small step that touches observability, or you will never know if it improved.; Once you have a sentence, save your surprise when rate limits does something you did not expect; and let everything else ladder out from there.
+
+15
+00:01:35,688 --> 00:01:36,048
+End of module
+
+16
+00:01:37,048 --> 00:01:40,216
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

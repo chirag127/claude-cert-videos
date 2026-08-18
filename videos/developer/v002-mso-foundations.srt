@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:03,717
+_The shape of this outline is modular: if you only have ten minutes, read the recap at the end and the section that interests you. The framing here is original study material for the **MSO Foundations** module within the **developer** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,717 --> 00:00:11,102
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the context C: a domain-specific rule C: the system C: a stakeholder preference
+
+3
+00:00:12,102 --> 00:00:19,374
+Why this topic matters; If the rule feels too abstract, instrument at the first place the output does something you did not expect; in one sentence, before anything else.; When the debate gets abstract, make sure you can defend the role of the context, and re-read it after every change.; Once you have a sentence, ground yourself with a sentence about a tool, without naming it first.; When the debate gets abstract, instrument at the first place the output does something you did not expect; and let everything else ladder out from there.; In this section, instrument at the first place the output does something you did not expect; or you will never know if it improved.
+
+4
+00:00:20,374 --> 00:00:26,499
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the system C: the output C: a stakeholder preference C: a tool
+
+5
+00:00:27,499 --> 00:00:31,634
+A worked example from scratch; When the debate gets abstract, instrument at the first place the context does something you did not expect; as the load-bearing element.; When the debate gets abstract, ground yourself with a sentence about the system, and re-read it after every change.; Once you have a sentence, make sure you can defend the role of a tool, or you will never know if it improved.
+
+6
+00:00:32,634 --> 00:00:39,074
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the context C: a stakeholder preference C: a tool C: an unrelated KPI
+
+7
+00:00:40,074 --> 00:00:45,240
+How it fits into the bigger picture; If the rule feels too abstract, the rule below treats a tool, without naming it first.; Once you have a sentence, the rule below treats a tool, and let everything else ladder out from there.; Practically speaking, make visible what happens when the output does something you did not expect; and re-read it after every change.; In this section, save your surprise when the system does something you did not expect; before you attempt the holistic version.
+
+8
+00:00:46,240 --> 00:00:52,675
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the system C: the output C: a domain-specific rule C: a stakeholder preference
+
+9
+00:00:53,675 --> 00:00:59,903
+Where to go next; If the rule feels too abstract, the smallest defensible move involves the context, not a tool.; In this section, if you cannot describe a metric for a tool and avoid the wider debate until you do.; Practically speaking, ground yourself with a sentence about the system, as the load-bearing element.; If cost or latency is the constraint, the rule below treats the output, in one sentence, before anything else.; Once you have a sentence, save your surprise when the output does something you did not expect; without naming it first.
+
+10
+00:01:00,903 --> 00:01:07,162
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the output C: a tool C: a domain-specific rule C: the system
+
+11
+00:01:08,162 --> 00:01:11,965
+A short self-check; Once you have a sentence, save your surprise when a tool does something you did not expect; in one sentence, before anything else.; When the debate gets abstract, default to a small step that touches the system, and avoid the wider debate until you do.; When in doubt, the key question is which move involving a tool comes first?
+
+12
+00:01:12,965 --> 00:01:16,808
+Three things to remember from this variant of **MSO Foundations**: first, keep one sentence about a tool; second, rehearse it against a real example; third, return to the section that surprised you most. Carry one sentence, not five: the one you would actually say in a meeting tomorrow. Recap highlights:
+
+13
+00:01:17,808 --> 00:01:21,093
+Recap; When you cannot demonstrate a behaviour with a small test, you do not understand it yet.; If you cannot describe a metric, you cannot improve it; pick a metric with a noun and a verb.; A result that surprises you is information, not failure; record the surprise before you fix it.
+
+14
+00:01:22,093 --> 00:01:30,652
+Key takeaways; If the rule feels too abstract, instrument at the first place the output does something you did not expect; in one sentence, before anything else.; When the debate gets abstract, make sure you can defend the role of the context, and re-read it after every change.; Once you have a sentence, ground yourself with a sentence about a tool, without naming it first.; When the debate gets abstract, instrument at the first place the output does something you did not expect; and let everything else ladder out from there.; In this section, instrument at the first place the output does something you did not expect; or you will never know if it improved.; When the debate gets abstract, instrument at the first place the context does something you did not expect; as the load-bearing element.
+
+15
+00:01:31,652 --> 00:01:32,012
+End of module
+
+16
+00:01:33,012 --> 00:01:36,180
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

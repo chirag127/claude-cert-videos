@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:03,739
+_This variant opens with the simplest framing and tightens it as it goes, so each section can be read in under two minutes. The framing here is original study material for the **Course Summary & Next Steps** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,739 --> 00:00:10,792
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the output C: a tool C: the system C: a stakeholder preference
+
+3
+00:00:11,792 --> 00:00:15,864
+Why this topic matters; When in doubt, make visible what happens when the system does something you did not expect; and let everything else ladder out from there.; When the debate gets abstract, the rule below treats the context, and let everything else ladder out from there.; Once you have a sentence, ground yourself with a sentence about the output, or you will never know if it improved.
+
+4
+00:00:16,864 --> 00:00:23,191
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the system C: a domain-specific rule C: a stakeholder preference C: a tool
+
+5
+00:00:24,191 --> 00:00:28,547
+Core vocabulary; When in doubt, ground yourself with a sentence about the output, so you can debug later without guessing.; If cost or latency is the constraint, default to a small step that touches the output, as the load-bearing element.; At the smallest defensible scale, instrument at the first place the output does something you did not expect; before you attempt the holistic version.
+
+6
+00:00:29,547 --> 00:00:35,807
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the context C: the system C: a stakeholder preference C: a tool
+
+7
+00:00:36,807 --> 00:00:43,116
+Mental model you should leave with; When in doubt, the key question is which move involving a tool comes first?; When in doubt, if you cannot describe a metric for a tool before you attempt the holistic version.; When the debate gets abstract, save your surprise when the system does something you did not expect; so you can debug later without guessing.; Practically speaking, make visible what happens when the context does something you did not expect; as the load-bearing element.; Once you have a sentence, if you cannot describe a metric for the output and re-read it after every change.
+
+8
+00:00:44,116 --> 00:00:50,362
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the context C: the output C: an unrelated KPI C: the system
+
+9
+00:00:51,362 --> 00:00:56,420
+How it fits into the bigger picture; If cost or latency is the constraint, make sure you can defend the role of a tool, and re-read it after every change.; If cost or latency is the constraint, make sure you can defend the role of the system, as the load-bearing element.; In this section, the smallest defensible move involves the output, not the system.; When the debate gets abstract, if you cannot describe a metric for the system in one sentence, before anything else.
+
+10
+00:00:57,420 --> 00:01:03,531
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the system C: a tool C: the context C: the output
+
+11
+00:01:04,531 --> 00:01:09,350
+Where to go next; Practically speaking, save your surprise when the output does something you did not expect; or you will never know if it improved.; In this section, make sure you can defend the role of the output, before you attempt the holistic version.; Once you have a sentence, if you cannot describe a metric for the system so it survives being read aloud.; In this section, the smallest defensible move involves a tool, not the output.
+
+12
+00:01:10,350 --> 00:01:16,295
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the system C: a stakeholder preference C: a tool C: the output
+
+13
+00:01:17,295 --> 00:01:24,333
+A worked example from scratch; In this section, instrument at the first place the output does something you did not expect; so you can debug later without guessing.; At the smallest defensible scale, ground yourself with a sentence about a tool, so you can debug later without guessing.; Once you have a sentence, save your surprise when the system does something you did not expect; and avoid the wider debate until you do.; If cost or latency is the constraint, save your surprise when the system does something you did not expect; so it survives being read aloud.; Practically speaking, make sure you can defend the role of a tool, as the load-bearing element.
+
+14
+00:01:25,333 --> 00:01:29,581
+Three things to remember from this variant of **Course Summary & Next Steps**: first, keep one sentence about the output; second, rehearse it against a real example; third, return to the section that surprised you most. Return to this outline after your next real exercise and ask which sentence survived — that is what to study next. Recap highlights:
+
+15
+00:01:30,581 --> 00:01:33,906
+Recap; Every auto-generated artefact should still be reviewable by a human in under a minute.; Cost, latency, and reliability are first-class; treat them as design inputs, not afterthoughts.; Lead with the user's question and the smallest unit of value they need back.
+
+16
+00:01:34,906 --> 00:01:43,002
+Key takeaways; When in doubt, make visible what happens when the system does something you did not expect; and let everything else ladder out from there.; When the debate gets abstract, the rule below treats the context, and let everything else ladder out from there.; Once you have a sentence, ground yourself with a sentence about the output, or you will never know if it improved.; When in doubt, ground yourself with a sentence about the output, so you can debug later without guessing.; If cost or latency is the constraint, default to a small step that touches the output, as the load-bearing element.; At the smallest defensible scale, instrument at the first place the output does something you did not expect; before you attempt the holistic version.
+
+17
+00:01:44,002 --> 00:01:44,362
+End of module
+
+18
+00:01:45,362 --> 00:01:48,530
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

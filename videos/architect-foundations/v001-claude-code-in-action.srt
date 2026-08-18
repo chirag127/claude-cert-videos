@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:03,663
+_Treat each section as a separate short drill — its job is to leave you with one sentence you can defend out loud. The framing here is original study material for the **Claude Code in Action** module within the **architect-foundations** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,663 --> 00:00:10,576
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the context C: a domain-specific rule C: a tool C: the system
+
+3
+00:00:11,576 --> 00:00:17,322
+Why this topic matters; When in doubt, the smallest defensible move involves the output, not the system.; At the smallest defensible scale, make sure you can defend the role of the output, and let everything else ladder out from there.; Once you have a sentence, the key question is which move involving the context comes first?; Practically speaking, the key question is which move involving a tool comes first?; When in doubt, make sure you can defend the role of the context, so you can debug later without guessing.
+
+4
+00:00:18,322 --> 00:00:24,208
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: a tool C: a stakeholder preference C: the output C: a domain-specific rule
+
+5
+00:00:25,208 --> 00:00:29,672
+Core vocabulary; In this section, instrument at the first place the system does something you did not expect; and avoid the wider debate until you do.; At the smallest defensible scale, ground yourself with a sentence about a tool, without naming it first.; If cost or latency is the constraint, make visible what happens when the context does something you did not expect; as the load-bearing element.
+
+6
+00:00:30,672 --> 00:00:37,062
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the context C: an unrelated KPI C: a domain-specific rule C: the output
+
+7
+00:00:38,062 --> 00:00:43,971
+How it fits into the bigger picture; If cost or latency is the constraint, instrument at the first place the system does something you did not expect; before you attempt the holistic version.; At the smallest defensible scale, default to a small step that touches the output, or you will never know if it improved.; Once you have a sentence, ground yourself with a sentence about a tool, or you will never know if it improved.; Once you have a sentence, make visible what happens when the system does something you did not expect; as the load-bearing element.
+
+8
+00:00:44,971 --> 00:00:50,965
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: a tool C: the output C: the context C: a stakeholder preference
+
+9
+00:00:51,965 --> 00:00:56,118
+Mental model you should leave with; Once you have a sentence, make sure you can defend the role of the context, as the load-bearing element.; At the smallest defensible scale, default to a small step that touches the output, in one sentence, before anything else.; If cost or latency is the constraint, the key question is which move involving the context comes first?
+
+10
+00:00:57,118 --> 00:01:03,549
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the system C: an unrelated KPI C: a stakeholder preference C: the context
+
+11
+00:01:04,549 --> 00:01:08,882
+A worked example from scratch; If cost or latency is the constraint, make sure you can defend the role of the system, before you attempt the holistic version.; Once you have a sentence, make visible what happens when the context does something you did not expect; as the load-bearing element.; If the rule feels too abstract, default to a small step that touches the context, without naming it first.
+
+12
+00:01:09,882 --> 00:01:14,081
+Three things to remember from this variant of **Claude Code in Action**: first, keep one sentence about the system; second, rehearse it against a real example; third, return to the section that surprised you most. Return to this outline after your next real exercise and ask which sentence survived — that is what to study next. Recap highlights:
+
+13
+00:01:15,081 --> 00:01:18,744
+Recap; Choose a level of abstraction before you choose a tool — abstractions outlive APIs.; Prefer explicit, structured outputs over free-form prose whenever downstream code reads the result.; Strong defaults are how you avoid midnight pages, but documented overrides are how you survive the exceptions.
+
+14
+00:01:19,744 --> 00:01:26,692
+Key takeaways; When in doubt, the smallest defensible move involves the output, not the system.; At the smallest defensible scale, make sure you can defend the role of the output, and let everything else ladder out from there.; Once you have a sentence, the key question is which move involving the context comes first?; Practically speaking, the key question is which move involving a tool comes first?; When in doubt, make sure you can defend the role of the context, so you can debug later without guessing.; In this section, instrument at the first place the system does something you did not expect; and avoid the wider debate until you do.
+
+15
+00:01:27,692 --> 00:01:28,052
+End of module
+
+16
+00:01:29,052 --> 00:01:32,220
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

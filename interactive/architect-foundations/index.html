@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Claude Certified Architect (Foundations) — original study path — interactive course</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:#0f172a;color:#f1f5f9}
+header{padding:32px 40px;background:linear-gradient(135deg,#1e3a8a 0%,#0f172a 100%)}
+h1{margin:0;font-size:28px}
+.sub{color:#cbd5e1;margin-top:8px;font-size:14px}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:0;min-height:calc(100vh - 100px)}
+nav{background:#1e293b;padding:20px;border-right:1px solid #334155}
+nav h3{font-size:13px;text-transform:uppercase;color:#94a3b8;margin:0 0 10px}
+nav a{display:flex;gap:10px;padding:8px 10px;color:#e2e8f0;text-decoration:none;border-radius:8px;font-size:14px}
+nav a:hover{background:#334155}
+nav a.active{background:#1e40af}
+.tag{font-size:11px;background:#475569;color:#f1f5f9;border-radius:4px;padding:2px 6px}
+main{padding:32px 40px}
+summary{font-size:14px;color:#cbd5e1;max-width:760px;white-space:pre-wrap}
+.module-card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px;margin:18px 0}
+.module-card h2{margin:0 0 6px;font-size:18px}
+.module-card p{margin:0 0 10px;color:#cbd5e1;font-size:13px}
+.module-card .links a{margin-right:12px;color:#60a5fa;text-decoration:none;font-size:13px}
+video{width:100%;max-width:760px;border-radius:12px;margin-top:18px;background:#000}
+.tabs{display:flex;gap:6px;margin:18px 0}
+.tab{padding:8px 14px;border:1px solid #334155;border-radius:8px;cursor:pointer;font-size:13px;background:#1e293b}
+.tab.active{background:#1e40af;border-color:#3b82f6}
+iframe{width:100%;height:520px;border:1px solid #334155;border-radius:12px;background:#0b1224}
+.progress{background:#1e293b;padding:14px 18px;border-radius:10px;margin-bottom:20px;font-size:14px}
+input[type=checkbox]{transform:scale(1.2);margin-right:8px}
+.tools{display:flex;gap:8px;margin:12px 0}
+button{background:#1e293b;color:#f1f5f9;border:1px solid #334155;border-radius:8px;padding:8px 14px;cursor:pointer}
+</style></head><body>
+<header>
+  <h1>Claude Certified Architect (Foundations) — original study path</h1>
+  <div class="sub">Original study material · TTS-narrated videos · interactive flashcards &amp; quizzes</div>
+</header>
+<div class="layout">
+  <nav>
+    <h3>Modules</h3>
+    <a href="#m1" onclick="showModule('m1');return false" data-mod="m1"><span style="flex:1">1. v000 ai fluency</span><span class="tag">video</span></a>
+    <a href="#m2" onclick="showModule('m2');return false" data-mod="m2"><span style="flex:1">2. v000 bedrock</span><span class="tag">video</span></a>
+    <a href="#m3" onclick="showModule('m3');return false" data-mod="m3"><span style="flex:1">3. v000 claude 101</span><span class="tag">video</span></a>
+    <a href="#m4" onclick="showModule('m4');return false" data-mod="m4"><span style="flex:1">4. v000 claude api</span><span class="tag">video</span></a>
+    <a href="#m5" onclick="showModule('m5');return false" data-mod="m5"><span style="flex:1">5. v000 claude code in action</span><span class="tag">video</span></a>
+    <a href="#m6" onclick="showModule('m6');return false" data-mod="m6"><span style="flex:1">6. v000 google cloud</span><span class="tag">video</span></a>
+    <a href="#m7" onclick="showModule('m7');return false" data-mod="m7"><span style="flex:1">7. v000 model context protocol</span><span class="tag">video</span></a>
+    <a href="#m8" onclick="showModule('m8');return false" data-mod="m8"><span style="flex:1">8. v001 ai fluency</span><span class="tag">video</span></a>
+    <a href="#m9" onclick="showModule('m9');return false" data-mod="m9"><span style="flex:1">9. v001 bedrock</span><span class="tag">video</span></a>
+    <a href="#m10" onclick="showModule('m10');return false" data-mod="m10"><span style="flex:1">10. v001 claude 101</span><span class="tag">video</span></a>
+    <a href="#m11" onclick="showModule('m11');return false" data-mod="m11"><span style="flex:1">11. v001 claude api</span><span class="tag">video</span></a>
+    <a href="#m12" onclick="showModule('m12');return false" data-mod="m12"><span style="flex:1">12. v001 claude code in action</span><span class="tag">video</span></a>
+    <a href="#m13" onclick="showModule('m13');return false" data-mod="m13"><span style="flex:1">13. v001 google cloud</span><span class="tag">video</span></a>
+    <a href="#m14" onclick="showModule('m14');return false" data-mod="m14"><span style="flex:1">14. v001 model context protocol</span><span class="tag">video</span></a>
+    <a href="#m15" onclick="showModule('m15');return false" data-mod="m15"><span style="flex:1">15. v002 ai fluency</span><span class="tag">video</span></a>
+    <a href="#m16" onclick="showModule('m16');return false" data-mod="m16"><span style="flex:1">16. v002 bedrock</span><span class="tag">video</span></a>
+    <a href="#m17" onclick="showModule('m17');return false" data-mod="m17"><span style="flex:1">17. v002 claude 101</span><span class="tag">video</span></a>
+    <a href="#m18" onclick="showModule('m18');return false" data-mod="m18"><span style="flex:1">18. v002 claude api</span><span class="tag">video</span></a>
+    <a href="#m19" onclick="showModule('m19');return false" data-mod="m19"><span style="flex:1">19. v002 claude code in action</span><span class="tag">video</span></a>
+    <a href="#m20" onclick="showModule('m20');return false" data-mod="m20"><span style="flex:1">20. v002 google cloud</span><span class="tag">video</span></a>
+    <a href="#m21" onclick="showModule('m21');return false" data-mod="m21"><span style="flex:1">21. v002 model context protocol</span><span class="tag">video</span></a>
+  </nav>
+  <main>
+    <div class="progress">
+      <strong>Track progress:</strong> <span id="progressCount">0</span> / 21 modules completed
+      <br><small>Click a checkbox on each module; your progress saves in this browser only.</small>
+    </div>
+    <div class="tools">
+      <button onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=true);updateProgress()">Mark all complete</button>
+      <button onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false);updateProgress()">Reset</button>
+    </div>
+    <summary>An original foundations-level study path for architects: AI fluency, building with the Claude API, hosting on major clouds, agentic Claude Code workflows, the Model Context Protocol, and a broad introduction to operating Claude responsibly at scale.</summary>
+    <section id="m1" style="display:none">
+            <div class="module-card">
+              <h2>1. AI Fluency: Framework &amp; Foundations</h2>
+              <p>Source outline: <code>content/architect-foundations/v000-ai-fluency.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v000-ai-fluency.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v000-ai-fluency.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v000-ai-fluency.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v000-ai-fluency.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m2" style="display:none">
+            <div class="module-card">
+              <h2>2. Claude with Amazon Bedrock</h2>
+              <p>Source outline: <code>content/architect-foundations/v000-bedrock.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v000-bedrock.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v000-bedrock.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v000-bedrock.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v000-bedrock.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m3" style="display:none">
+            <div class="module-card">
+              <h2>3. Claude 101</h2>
+              <p>Source outline: <code>content/architect-foundations/v000-claude-101.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v000-claude-101.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v000-claude-101.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v000-claude-101.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v000-claude-101.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m4" style="display:none">
+            <div class="module-card">
+              <h2>4. Building with the Claude API</h2>
+              <p>Source outline: <code>content/architect-foundations/v000-claude-api.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v000-claude-api.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v000-claude-api.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v000-claude-api.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v000-claude-api.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m5" style="display:none">
+            <div class="module-card">
+              <h2>5. Claude Code in Action</h2>
+              <p>Source outline: <code>content/architect-foundations/v000-claude-code-in-action.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v000-claude-code-in-action.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v000-claude-code-in-action.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v000-claude-code-in-action.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v000-claude-code-in-action.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m6" style="display:none">
+            <div class="module-card">
+              <h2>6. Claude on Google Cloud</h2>
+              <p>Source outline: <code>content/architect-foundations/v000-google-cloud.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v000-google-cloud.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v000-google-cloud.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v000-google-cloud.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v000-google-cloud.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m7" style="display:none">
+            <div class="module-card">
+              <h2>7. Introduction to Model Context Protocol</h2>
+              <p>Source outline: <code>content/architect-foundations/v000-model-context-protocol.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v000-model-context-protocol.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v000-model-context-protocol.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v000-model-context-protocol.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v000-model-context-protocol.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m8" style="display:none">
+            <div class="module-card">
+              <h2>8. AI Fluency: Framework &amp; Foundations</h2>
+              <p>Source outline: <code>content/architect-foundations/v001-ai-fluency.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v001-ai-fluency.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v001-ai-fluency.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v001-ai-fluency.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v001-ai-fluency.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m9" style="display:none">
+            <div class="module-card">
+              <h2>9. Claude with Amazon Bedrock</h2>
+              <p>Source outline: <code>content/architect-foundations/v001-bedrock.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v001-bedrock.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v001-bedrock.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v001-bedrock.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v001-bedrock.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m10" style="display:none">
+            <div class="module-card">
+              <h2>10. Claude 101</h2>
+              <p>Source outline: <code>content/architect-foundations/v001-claude-101.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v001-claude-101.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v001-claude-101.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v001-claude-101.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v001-claude-101.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m11" style="display:none">
+            <div class="module-card">
+              <h2>11. Building with the Claude API</h2>
+              <p>Source outline: <code>content/architect-foundations/v001-claude-api.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v001-claude-api.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v001-claude-api.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v001-claude-api.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v001-claude-api.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m12" style="display:none">
+            <div class="module-card">
+              <h2>12. Claude Code in Action</h2>
+              <p>Source outline: <code>content/architect-foundations/v001-claude-code-in-action.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v001-claude-code-in-action.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v001-claude-code-in-action.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v001-claude-code-in-action.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v001-claude-code-in-action.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m13" style="display:none">
+            <div class="module-card">
+              <h2>13. Claude on Google Cloud</h2>
+              <p>Source outline: <code>content/architect-foundations/v001-google-cloud.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v001-google-cloud.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v001-google-cloud.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v001-google-cloud.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v001-google-cloud.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m14" style="display:none">
+            <div class="module-card">
+              <h2>14. Introduction to Model Context Protocol</h2>
+              <p>Source outline: <code>content/architect-foundations/v001-model-context-protocol.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v001-model-context-protocol.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v001-model-context-protocol.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v001-model-context-protocol.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v001-model-context-protocol.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m15" style="display:none">
+            <div class="module-card">
+              <h2>15. AI Fluency: Framework &amp; Foundations</h2>
+              <p>Source outline: <code>content/architect-foundations/v002-ai-fluency.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v002-ai-fluency.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v002-ai-fluency.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v002-ai-fluency.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v002-ai-fluency.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m16" style="display:none">
+            <div class="module-card">
+              <h2>16. Claude with Amazon Bedrock</h2>
+              <p>Source outline: <code>content/architect-foundations/v002-bedrock.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v002-bedrock.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v002-bedrock.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v002-bedrock.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v002-bedrock.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m17" style="display:none">
+            <div class="module-card">
+              <h2>17. Claude 101</h2>
+              <p>Source outline: <code>content/architect-foundations/v002-claude-101.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v002-claude-101.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v002-claude-101.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v002-claude-101.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v002-claude-101.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m18" style="display:none">
+            <div class="module-card">
+              <h2>18. Building with the Claude API</h2>
+              <p>Source outline: <code>content/architect-foundations/v002-claude-api.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v002-claude-api.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v002-claude-api.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v002-claude-api.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v002-claude-api.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m19" style="display:none">
+            <div class="module-card">
+              <h2>19. Claude Code in Action</h2>
+              <p>Source outline: <code>content/architect-foundations/v002-claude-code-in-action.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v002-claude-code-in-action.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v002-claude-code-in-action.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v002-claude-code-in-action.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v002-claude-code-in-action.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m20" style="display:none">
+            <div class="module-card">
+              <h2>20. Claude on Google Cloud</h2>
+              <p>Source outline: <code>content/architect-foundations/v002-google-cloud.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v002-google-cloud.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v002-google-cloud.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v002-google-cloud.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v002-google-cloud.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+    <section id="m21" style="display:none">
+            <div class="module-card">
+              <h2>21. Introduction to Model Context Protocol</h2>
+              <p>Source outline: <code>content/architect-foundations/v002-model-context-protocol.md</code></p>
+              <label><input type="checkbox"> Mark complete</label>
+              <div class="card-root">
+                <div class="tabs">
+                  <span class="tab active" data-tab="video" onclick="showTab(this.parentNode.parentNode,'video')">Video</span>
+                  <span class="tab" data-tab="fc" onclick="showTab(this.parentNode.parentNode,'fc')">Flashcards</span>
+                  <span class="tab" data-tab="qz" onclick="showTab(this.parentNode.parentNode,'qz')">Quiz</span>
+                </div>
+                <div data-pane="video">
+                  <video controls preload="metadata" src="../videos/architect-foundations/v002-model-context-protocol.mp4"></video>
+                  <p style="color:#94a3b8;font-size:12px">Caption track: <a style="color:#60a5fa" href="../videos/architect-foundations/v002-model-context-protocol.srt" download>download SRT</a></p>
+                </div>
+                <div data-pane="fc" style="display:none"><iframe src="../flashcards/architect-foundations/v002-model-context-protocol.html"></iframe></div>
+                <div data-pane="qz" style="display:none"><iframe src="../quizzes/architect-foundations/v002-model-context-protocol.html"></iframe></div>
+              </div>
+            </div>
+          </section>
+  </main>
+</div>
+<script>
+function updateProgress(){
+  const cbs=document.querySelectorAll('input[type=checkbox]');
+  let n=0; cbs.forEach(c=>{if(c.checked) n++});
+  document.getElementById('progressCount').textContent=n;
+}
+function showTab(card, name){
+  card.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  card.querySelectorAll('[data-pane]').forEach(p=>p.style.display='none');
+  card.querySelector(`[data-pane="${name}"]`).style.display='block';
+  card.querySelector(`.tab[data-tab="${name}"]`).classList.add('active');
+}
+function showModule(id){
+  document.querySelectorAll('section').forEach(s=>s.style.display='none');
+  document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+  document.getElementById(id).style.display='block';
+  document.querySelector(`nav a[data-mod="${id}"]`).classList.add('active');
+  try{history.replaceState(null,'','#'+id);}catch(e){}
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.card-root').forEach(c=>showTab(c,'video'));
+  const hash=location.hash.slice(1);
+  if(hash) showModule(hash);
+  document.querySelectorAll('input[type=checkbox]').forEach(c=>c.addEventListener('change',updateProgress));
+  updateProgress();
+});
+</script></body></html>

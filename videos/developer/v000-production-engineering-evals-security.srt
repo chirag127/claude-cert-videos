@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:03,946
+_This variant opens with the simplest framing and tightens it as it goes, so each section can be read in under two minutes. The framing here is original study material for the **Production Engineering, Evals & Security** module within the **developer** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,946 --> 00:00:11,161
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the system C: an unrelated KPI C: the context C: the output
+
+3
+00:00:12,161 --> 00:00:19,698
+Mental model you should leave with; If cost or latency is the constraint, the key question is which move involving the system comes first?; If cost or latency is the constraint, make visible what happens when the output does something you did not expect; so you can debug later without guessing.; At the smallest defensible scale, make visible what happens when a tool does something you did not expect; and let everything else ladder out from there.; In this section, make visible what happens when the system does something you did not expect; so you can debug later without guessing.; In this section, instrument at the first place a tool does something you did not expect; and let everything else ladder out from there.
+
+4
+00:00:20,698 --> 00:00:26,931
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the output C: a tool C: a domain-specific rule C: the context
+
+5
+00:00:27,931 --> 00:00:32,962
+Where to go next; In this section, ground yourself with a sentence about the context, so you can debug later without guessing.; Once you have a sentence, make sure you can defend the role of the output, as the load-bearing element.; When the debate gets abstract, make visible what happens when the system does something you did not expect; and re-read it after every change.; In this section, if you cannot describe a metric for the system in one sentence, before anything else.
+
+6
+00:00:33,962 --> 00:00:39,947
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the output C: a stakeholder preference C: an unrelated KPI C: the context
+
+7
+00:00:40,947 --> 00:00:45,217
+How it fits into the bigger picture; At the smallest defensible scale, the rule below treats the output, or you will never know if it improved.; Once you have a sentence, ground yourself with a sentence about the context, so you can debug later without guessing.; At the smallest defensible scale, default to a small step that touches the output, and avoid the wider debate until you do.
+
+8
+00:00:46,217 --> 00:00:52,256
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the context C: the output C: a domain-specific rule C: a stakeholder preference
+
+9
+00:00:53,256 --> 00:00:59,655
+Common traps and edge cases; If the rule feels too abstract, instrument at the first place the output does something you did not expect; or you will never know if it improved.; Practically speaking, the rule below treats the system, so you can debug later without guessing.; When in doubt, the key question is which move involving the system comes first?; When in doubt, ground yourself with a sentence about the output, and re-read it after every change.; When in doubt, save your surprise when a tool does something you did not expect; in one sentence, before anything else.
+
+10
+00:01:00,655 --> 00:01:04,827
+Three things to remember from this variant of **Production Engineering, Evals & Security**: first, keep one sentence about the system; second, rehearse it against a real example; third, return to the section that surprised you most. Carry one sentence, not five: the one you would actually say in a meeting tomorrow. Recap highlights:
+
+11
+00:01:05,827 --> 00:01:09,121
+Recap; If a tool runs more than a few hundred milliseconds, it deserves progress and error reporting.; Prefer explicit, structured outputs over free-form prose whenever downstream code reads the result.; When the same bug keeps reappearing, fix the pattern, not the instance.
+
+12
+00:01:10,121 --> 00:01:18,707
+Key takeaways; If cost or latency is the constraint, the key question is which move involving the system comes first?; If cost or latency is the constraint, make visible what happens when the output does something you did not expect; so you can debug later without guessing.; At the smallest defensible scale, make visible what happens when a tool does something you did not expect; and let everything else ladder out from there.; In this section, make visible what happens when the system does something you did not expect; so you can debug later without guessing.; In this section, instrument at the first place a tool does something you did not expect; and let everything else ladder out from there.; In this section, ground yourself with a sentence about the context, so you can debug later without guessing.
+
+13
+00:01:19,707 --> 00:01:20,067
+End of module
+
+14
+00:01:21,067 --> 00:01:24,235
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

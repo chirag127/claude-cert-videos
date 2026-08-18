@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:03,996
+_The shape of this outline is modular: if you only have ten minutes, read the recap at the end and the section that interests you. The framing here is original study material for the **Enterprise Integration & Production** module within the **architect-professional** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,996 --> 00:00:11,237
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often retries, so each sentence below will return to retries as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: observability C: auth model C: retries C: rate limits
+
+3
+00:00:12,237 --> 00:00:17,318
+A short self-check; If cost or latency is the constraint, ground yourself with a sentence about auth model, and let everything else ladder out from there.; In this section, ground yourself with a sentence about auth model, so it survives being read aloud.; In this section, make sure you can defend the role of retries, so you can debug later without guessing.; At the smallest defensible scale, the key question is which move involving rate limits comes first?
+
+4
+00:00:18,318 --> 00:00:24,676
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often retries, so each sentence below will return to retries as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: observability C: auth model C: an unrelated KPI C: a stakeholder preference
+
+5
+00:00:25,676 --> 00:00:29,731
+A worked example from scratch; Practically speaking, the smallest defensible move involves auth model, not observability.; Once you have a sentence, the rule below treats rate limits, before you attempt the holistic version.; If the rule feels too abstract, make visible what happens when auth model does something you did not expect; so it survives being read aloud.
+
+6
+00:00:30,731 --> 00:00:37,058
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often retries, so each sentence below will return to retries as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: rate limits C: retries C: auth model C: a domain-specific rule
+
+7
+00:00:38,058 --> 00:00:42,625
+Common traps and edge cases; If cost or latency is the constraint, ground yourself with a sentence about auth model, in one sentence, before anything else.; When the debate gets abstract, the key question is which move involving auth model comes first?; If the rule feels too abstract, save your surprise when observability does something you did not expect; and re-read it after every change.
+
+8
+00:00:43,625 --> 00:00:50,042
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often observability, so each sentence below will return to observability as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: auth model C: a domain-specific rule C: an unrelated KPI C: observability
+
+9
+00:00:51,042 --> 00:00:54,530
+Core vocabulary; When the debate gets abstract, the key question is which move involving rate limits comes first?; When in doubt, ground yourself with a sentence about retries, as the load-bearing element.; If cost or latency is the constraint, the key question is which move involving retries comes first?
+
+10
+00:00:55,530 --> 00:01:01,825
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often auth model, so each sentence below will return to auth model as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: auth model C: observability C: a stakeholder preference C: a domain-specific rule
+
+11
+00:01:02,825 --> 00:01:08,824
+Where to go next; If cost or latency is the constraint, make visible what happens when retries does something you did not expect; before you attempt the holistic version.; When the debate gets abstract, instrument at the first place auth model does something you did not expect; without naming it first.; At the smallest defensible scale, make visible what happens when auth model does something you did not expect; without naming it first.; Once you have a sentence, the rule below treats observability, before you attempt the holistic version.
+
+12
+00:01:09,824 --> 00:01:16,155
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often observability, so each sentence below will return to observability as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: observability C: a domain-specific rule C: rate limits C: a stakeholder preference
+
+13
+00:01:17,155 --> 00:01:24,148
+Why this topic matters; If the rule feels too abstract, make visible what happens when rate limits does something you did not expect; so it survives being read aloud.; If cost or latency is the constraint, make visible what happens when auth model does something you did not expect; without naming it first.; In this section, if you cannot describe a metric for retries in one sentence, before anything else.; In this section, the key question is which move involving retries comes first?; When in doubt, make visible what happens when retries does something you did not expect; and let everything else ladder out from there.
+
+14
+00:01:25,148 --> 00:01:29,283
+Three things to remember from this variant of **Enterprise Integration & Production**: first, keep one sentence about observability; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+15
+00:01:30,283 --> 00:01:33,798
+Recap; Prefer explicit, structured outputs over free-form prose whenever downstream code reads the result.; When the same fact lives in two places, pick one place as the source of truth and link to it from the other.; The cheapest possible evaluation beats a perfect evaluation that never runs.
+
+16
+00:01:34,798 --> 00:01:42,097
+Key takeaways; If cost or latency is the constraint, ground yourself with a sentence about auth model, and let everything else ladder out from there.; In this section, ground yourself with a sentence about auth model, so it survives being read aloud.; In this section, make sure you can defend the role of retries, so you can debug later without guessing.; At the smallest defensible scale, the key question is which move involving rate limits comes first?; Practically speaking, the smallest defensible move involves auth model, not observability.; Once you have a sentence, the rule below treats rate limits, before you attempt the holistic version.
+
+17
+00:01:43,097 --> 00:01:43,457
+End of module
+
+18
+00:01:44,457 --> 00:01:47,625
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

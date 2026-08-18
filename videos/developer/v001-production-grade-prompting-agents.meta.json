@@ -1,0 +1,9 @@
+{
+  "track": "developer",
+  "module": "v001-production-grade-prompting-agents",
+  "title": "Production-Grade Prompting & Agentic Workflows",
+  "slides": 16,
+  "duration_sec": 95.61,
+  "mp4": "videos\\developer\\v001-production-grade-prompting-agents.mp4",
+  "srt": "videos\\developer\\v001-production-grade-prompting-agents.srt"
+}

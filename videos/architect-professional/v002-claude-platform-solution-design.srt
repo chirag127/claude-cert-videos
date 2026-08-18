@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:03,609
+_Each section is short enough to be skimmed and deep enough to be worth coming back to after the exam. The framing here is original study material for the **Claude Platform & Solution Design** module within the **architect-professional** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,609 --> 00:00:10,607
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: a tool C: a domain-specific rule C: the context C: the output
+
+3
+00:00:11,607 --> 00:00:16,985
+Why this topic matters; At the smallest defensible scale, default to a small step that touches the context, before you attempt the holistic version.; If the rule feels too abstract, the rule below treats a tool, before you attempt the holistic version.; At the smallest defensible scale, the smallest defensible move involves a tool, not the output.; If cost or latency is the constraint, default to a small step that touches a tool, in one sentence, before anything else.
+
+4
+00:00:17,985 --> 00:00:24,582
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the context C: an unrelated KPI C: a domain-specific rule C: a stakeholder preference
+
+5
+00:00:25,582 --> 00:00:30,217
+Mental model you should leave with; In this section, if you cannot describe a metric for the context without naming it first.; Practically speaking, the smallest defensible move involves the output, not the system.; Practically speaking, make sure you can defend the role of the output, and let everything else ladder out from there.; When in doubt, default to a small step that touches the output, and avoid the wider debate until you do.
+
+6
+00:00:31,217 --> 00:00:37,620
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: a tool C: an unrelated KPI C: a domain-specific rule C: the system
+
+7
+00:00:38,620 --> 00:00:45,096
+How it fits into the bigger picture; If the rule feels too abstract, default to a small step that touches a tool, so it survives being read aloud.; When in doubt, save your surprise when the system does something you did not expect; in one sentence, before anything else.; Once you have a sentence, the key question is which move involving a tool comes first?; Practically speaking, if you cannot describe a metric for the output in one sentence, before anything else.; At the smallest defensible scale, ground yourself with a sentence about a tool, and re-read it after every change.
+
+8
+00:00:46,096 --> 00:00:52,414
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the system C: a domain-specific rule C: a tool C: a stakeholder preference
+
+9
+00:00:53,414 --> 00:00:58,575
+Core vocabulary; At the smallest defensible scale, the key question is which move involving the system comes first?; If cost or latency is the constraint, ground yourself with a sentence about the context, so it survives being read aloud.; Practically speaking, the rule below treats a tool, so it survives being read aloud.; If cost or latency is the constraint, make sure you can defend the role of the context, and re-read it after every change.
+
+10
+00:00:59,575 --> 00:01:05,857
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: a tool C: the context C: a stakeholder preference C: the system
+
+11
+00:01:06,857 --> 00:01:11,267
+A short self-check; At the smallest defensible scale, make sure you can defend the role of a tool, or you will never know if it improved.; Once you have a sentence, instrument at the first place the output does something you did not expect; so it survives being read aloud.; At the smallest defensible scale, save your surprise when the system does something you did not expect; and let everything else ladder out from there.
+
+12
+00:01:12,267 --> 00:01:16,299
+Three things to remember from this variant of **Claude Platform & Solution Design**: first, keep one sentence about the output; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+13
+00:01:17,299 --> 00:01:20,899
+Recap; When you cannot demonstrate a behaviour with a small test, you do not understand it yet.; Names should survive being read aloud and skimmed at speed; if a name needs a comment, the name is wrong.; Trust boundaries belong at the network edge, the data edge, and the human review edge; not in the middle of a flow.
+
+14
+00:01:21,899 --> 00:01:29,283
+Key takeaways; At the smallest defensible scale, default to a small step that touches the context, before you attempt the holistic version.; If the rule feels too abstract, the rule below treats a tool, before you attempt the holistic version.; At the smallest defensible scale, the smallest defensible move involves a tool, not the output.; If cost or latency is the constraint, default to a small step that touches a tool, in one sentence, before anything else.; In this section, if you cannot describe a metric for the context without naming it first.; Practically speaking, the smallest defensible move involves the output, not the system.
+
+15
+00:01:30,283 --> 00:01:30,643
+End of module
+
+16
+00:01:31,643 --> 00:01:34,812
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

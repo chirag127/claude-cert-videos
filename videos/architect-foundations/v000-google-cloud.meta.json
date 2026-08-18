@@ -1,0 +1,9 @@
+{
+  "track": "architect-foundations",
+  "module": "v000-google-cloud",
+  "title": "Claude on Google Cloud",
+  "slides": 14,
+  "duration_sec": 81.28,
+  "mp4": "videos\\architect-foundations\\v000-google-cloud.mp4",
+  "srt": "videos\\architect-foundations\\v000-google-cloud.srt"
+}

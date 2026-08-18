@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:03,447
+_Each section is short enough to be skimmed and deep enough to be worth coming back to after the exam. The framing here is original study material for the **Claude 101** module within the **architect-foundations** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,447 --> 00:00:10,621
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the output C: a domain-specific rule C: the system C: a stakeholder preference
+
+3
+00:00:11,621 --> 00:00:17,057
+Where to go next; If the rule feels too abstract, save your surprise when the context does something you did not expect; and let everything else ladder out from there.; Once you have a sentence, the key question is which move involving the system comes first?; If the rule feels too abstract, default to a small step that touches the output, before you attempt the holistic version.; If cost or latency is the constraint, if you cannot describe a metric for the context as the load-bearing element.
+
+4
+00:00:18,057 --> 00:00:24,424
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the system C: a stakeholder preference C: the output C: an unrelated KPI
+
+5
+00:00:25,424 --> 00:00:31,895
+Common traps and edge cases; Once you have a sentence, if you cannot describe a metric for the output in one sentence, before anything else.; In this section, the rule below treats the output, without naming it first.; Practically speaking, instrument at the first place the output does something you did not expect; in one sentence, before anything else.; Practically speaking, the key question is which move involving the context comes first?; When the debate gets abstract, instrument at the first place the system does something you did not expect; and re-read it after every change.
+
+6
+00:00:32,895 --> 00:00:39,218
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the output C: a domain-specific rule C: the context C: a tool
+
+7
+00:00:40,218 --> 00:00:43,818
+Core vocabulary; At the smallest defensible scale, the key question is which move involving a tool comes first?; In this section, the smallest defensible move involves the context, not the system.; If cost or latency is the constraint, make sure you can defend the role of a tool, so it survives being read aloud.
+
+8
+00:00:44,818 --> 00:00:50,974
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the system C: a tool C: an unrelated KPI C: the context
+
+9
+00:00:51,974 --> 00:00:57,815
+A worked example from scratch; At the smallest defensible scale, the rule below treats the system, without naming it first.; When in doubt, if you cannot describe a metric for the system before you attempt the holistic version.; If cost or latency is the constraint, the smallest defensible move involves the context, not the system.; When in doubt, make sure you can defend the role of the output, or you will never know if it improved.; In this section, the smallest defensible move involves the system, not a tool.
+
+10
+00:00:58,815 --> 00:01:05,083
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the system C: the context C: the output C: a stakeholder preference
+
+11
+00:01:06,083 --> 00:01:13,112
+How it fits into the bigger picture; If cost or latency is the constraint, instrument at the first place the system does something you did not expect; so it survives being read aloud.; At the smallest defensible scale, ground yourself with a sentence about the system, and re-read it after every change.; If cost or latency is the constraint, the rule below treats the system, without naming it first.; Practically speaking, save your surprise when the context does something you did not expect; and let everything else ladder out from there.; At the smallest defensible scale, if you cannot describe a metric for a tool as the load-bearing element.
+
+12
+00:01:14,112 --> 00:01:20,210
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the system C: a domain-specific rule C: the context C: a stakeholder preference
+
+13
+00:01:21,210 --> 00:01:27,901
+Mental model you should leave with; In this section, save your surprise when the context does something you did not expect; without naming it first.; When the debate gets abstract, the rule below treats a tool, and let everything else ladder out from there.; At the smallest defensible scale, save your surprise when the output does something you did not expect; and avoid the wider debate until you do.; Once you have a sentence, make visible what happens when the output does something you did not expect; without naming it first.; In this section, the key question is which move involving the output comes first?
+
+14
+00:01:28,901 --> 00:01:32,753
+Three things to remember from this variant of **Claude 101**: first, keep one sentence about the system; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+15
+00:01:33,753 --> 00:01:37,034
+Recap; A reusable pattern earns the right to be reused by being reused at least twice.; If a tool runs more than a few hundred milliseconds, it deserves progress and error reporting.; Make the path from input to decision the shortest defensible one for the question at hand.
+
+16
+00:01:38,034 --> 00:01:45,589
+Key takeaways; If the rule feels too abstract, save your surprise when the context does something you did not expect; and let everything else ladder out from there.; Once you have a sentence, the key question is which move involving the system comes first?; If the rule feels too abstract, default to a small step that touches the output, before you attempt the holistic version.; If cost or latency is the constraint, if you cannot describe a metric for the context as the load-bearing element.; Once you have a sentence, if you cannot describe a metric for the output in one sentence, before anything else.; In this section, the rule below treats the output, without naming it first.
+
+17
+00:01:46,589 --> 00:01:46,949
+End of module
+
+18
+00:01:47,949 --> 00:01:51,117
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Team Enablement &amp; Operational Productivity — quiz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{color-scheme:light dark}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0f172a;color:#f1f5f9}
+.wrap{max-width:760px;margin:40px auto;padding:0 20px}
+h1{font-size:24px;margin:0 0 16px}
+.progress{height:8px;background:#1e293b;border-radius:4px;overflow:hidden;margin-bottom:24px}
+.bar{height:100%;background:linear-gradient(90deg,#3b82f6,#22d3ee);width:0;transition:width .25s}
+.q{font-size:22px;line-height:1.45;margin:0 0 18px}
+.choices{display:grid;gap:10px}
+.choice{background:#1e293b;border:1px solid #334155;border-radius:10px;padding:14px 16px;cursor:pointer;text-align:left;font-size:16px;color:#e2e8f0}
+.choice:hover{background:#334155}
+.choice.correct{background:#14532d;border-color:#22c55e}
+.choice.wrong{background:#7f1d1d;border-color:#ef4444}
+.toolbar{display:flex;gap:8px;margin-top:18px}
+button{background:#1e293b;color:#f1f5f9;border:1px solid #334155;border-radius:8px;padding:8px 14px;cursor:pointer;font-size:14px}
+button.primary{background:#2563eb;border-color:#1d4ed8}
+.score{font-size:18px;text-align:center;padding:24px;background:#1e293b;border-radius:12px}
+</style></head><body>
+<div class="wrap">
+  <h1>Team Enablement &amp; Operational Productivity — quiz</h1>
+  <div class="progress"><div class="bar" id="bar"></div></div>
+  <div id="root"></div>
+</div>
+<script>
+const Q = [{"q": "True or False: In this section, the smallest defensible move involves a tool, not the output.", "choices": ["True", "False"], "answer": 0}, {"q": "True or False: At the smallest defensible scale, make visible what happens when the context does something you did not expect; and avoid the wider debate until you do.", "choices": ["True", "False"], "answer": 0}, {"q": "True or False: At the smallest defensible scale, ground yourself with a sentence about the system, and re-read it after every change.", "choices": ["True", "False"], "answer": 0}, {"q": "True or False: If the rule feels too abstract, default to a small step that touches a tool, as the load-bearing element.", "choices": ["True", "False"], "answer": 0}, {"q": "True or False: If cost or latency is the constraint, make visible what happens when the context does something you did not expect; and avoid the wider debate until you do.", "choices": ["True", "False"], "answer": 0}, {"q": "True or False: When the debate gets abstract, the rule below treats the system, without naming it first.", "choices": ["True", "False"], "answer": 0}];
+let i=0, score=0, answered=false;
+const root=document.getElementById('root');
+const bar=document.getElementById('bar');
+function render(){
+  if(i>=Q.length){
+    const pct=Math.round(score/Q.length*100);
+    root.innerHTML=`<div class="score">Score: ${score} / ${Q.length} (${pct}%)<br><br><button class="primary" onclick="location.reload()">Restart</button></div>`;
+    bar.style.width='100%';
+    return;
+  }
+  bar.style.width=`${Math.round(i/Q.length*100)}%`;
+  const q=Q[i];
+  root.innerHTML=`<div class="q">${i+1}. ${q.q}</div><div class="choices" id="choices"></div>`;
+  const ch=document.getElementById('choices');
+  q.choices.forEach((c,idx)=>{
+    const b=document.createElement('button');
+    b.className='choice'; b.textContent=c;
+    b.onclick=()=>{
+      if(answered) return; answered=true;
+      if(idx===q.answer){b.classList.add('correct'); score++;}
+      else{b.classList.add('wrong'); ch.children[q.answer].classList.add('correct');}
+      setTimeout(()=>{answered=false; i++; render();},900);
+    };
+    ch.appendChild(b);
+  });
+}
+render();
+</script></body></html>

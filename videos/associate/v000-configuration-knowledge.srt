@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:03,829
+_This variant opens with the simplest framing and tightens it as it goes, so each section can be read in under two minutes. The framing here is original study material for the **Configuration & Knowledge Management** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,829 --> 00:00:10,877
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: a tool C: the system C: an unrelated KPI C: a domain-specific rule
+
+3
+00:00:11,877 --> 00:00:18,906
+Mental model you should leave with; Practically speaking, the rule below treats the context, and avoid the wider debate until you do.; Once you have a sentence, make sure you can defend the role of a tool, as the load-bearing element.; At the smallest defensible scale, save your surprise when the context does something you did not expect; so you can debug later without guessing.; In this section, instrument at the first place the context does something you did not expect; as the load-bearing element.; At the smallest defensible scale, save your surprise when the output does something you did not expect; and avoid the wider debate until you do.
+
+4
+00:00:19,906 --> 00:00:25,666
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: a tool C: the output C: a stakeholder preference C: the system
+
+5
+00:00:26,666 --> 00:00:33,578
+Core vocabulary; If cost or latency is the constraint, save your surprise when the system does something you did not expect; so you can debug later without guessing.; In this section, if you cannot describe a metric for the context as the load-bearing element.; In this section, instrument at the first place the system does something you did not expect; and let everything else ladder out from there.; When in doubt, save your surprise when the system does something you did not expect; and let everything else ladder out from there.; When the debate gets abstract, if you cannot describe a metric for a tool so you can debug later without guessing.
+
+6
+00:00:34,578 --> 00:00:41,054
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the system C: the output C: a domain-specific rule C: an unrelated KPI
+
+7
+00:00:42,054 --> 00:00:46,869
+Common traps and edge cases; If cost or latency is the constraint, the smallest defensible move involves a tool, not the context.; Practically speaking, default to a small step that touches the system, so it survives being read aloud.; If cost or latency is the constraint, the rule below treats the output, as the load-bearing element.; When in doubt, the key question is which move involving the system comes first?
+
+8
+00:00:47,869 --> 00:00:53,993
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the output C: a stakeholder preference C: a tool C: the context
+
+9
+00:00:54,993 --> 00:00:59,205
+A worked example from scratch; When the debate gets abstract, ground yourself with a sentence about a tool, so you can debug later without guessing.; When in doubt, save your surprise when the system does something you did not expect; so it survives being read aloud.; When the debate gets abstract, make sure you can defend the role of a tool, and let everything else ladder out from there.
+
+10
+00:01:00,205 --> 00:01:04,255
+Three things to remember from this variant of **Configuration & Knowledge Management**: first, keep one sentence about the output; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+11
+00:01:05,255 --> 00:01:08,702
+Recap; Prefer explicit, structured outputs over free-form prose whenever downstream code reads the result.; When the same fact lives in two places, pick one place as the source of truth and link to it from the other.; When in doubt, write the safe answer and explain why a less-safe answer would change the rule.
+
+12
+00:01:09,702 --> 00:01:18,077
+Key takeaways; Practically speaking, the rule below treats the context, and avoid the wider debate until you do.; Once you have a sentence, make sure you can defend the role of a tool, as the load-bearing element.; At the smallest defensible scale, save your surprise when the context does something you did not expect; so you can debug later without guessing.; In this section, instrument at the first place the context does something you did not expect; as the load-bearing element.; At the smallest defensible scale, save your surprise when the output does something you did not expect; and avoid the wider debate until you do.; If cost or latency is the constraint, save your surprise when the system does something you did not expect; so you can debug later without guessing.
+
+13
+00:01:19,077 --> 00:01:19,437
+End of module
+
+14
+00:01:20,437 --> 00:01:23,605
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

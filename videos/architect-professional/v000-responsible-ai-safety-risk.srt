@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:03,856
+_Each section is short enough to be skimmed and deep enough to be worth coming back to after the exam. The framing here is original study material for the **Responsible AI, Safety & Risk for Architects** module within the **architect-professional** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,856 --> 00:00:11,611
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often output screening, so each sentence below will return to output screening as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: tool-call authorization C: human-in-the-loop C: an unrelated KPI C: output screening
+
+3
+00:00:12,611 --> 00:00:17,340
+A short self-check; Once you have a sentence, make visible what happens when tool-call authorization does something you did not expect; and avoid the wider debate until you do.; At the smallest defensible scale, the key question is which move involving output screening comes first?; Once you have a sentence, make visible what happens when tool-call authorization does something you did not expect; and avoid the wider debate until you do.
+
+4
+00:00:18,340 --> 00:00:24,928
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often output screening, so each sentence below will return to output screening as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: output screening C: tool-call authorization C: a domain-specific rule C: a stakeholder preference
+
+5
+00:00:25,928 --> 00:00:30,995
+Where to go next; When in doubt, save your surprise when output screening does something you did not expect; without naming it first.; When in doubt, make sure you can defend the role of input screening, and let everything else ladder out from there.; Practically speaking, make sure you can defend the role of output screening, or you will never know if it improved.; Practically speaking, ground yourself with a sentence about input screening, so you can debug later without guessing.
+
+6
+00:00:31,995 --> 00:00:38,763
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often output screening, so each sentence below will return to output screening as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: human-in-the-loop C: a stakeholder preference C: tool-call authorization C: an unrelated KPI
+
+7
+00:00:39,763 --> 00:00:44,335
+Core vocabulary; When the debate gets abstract, save your surprise when input screening does something you did not expect; and let everything else ladder out from there.; In this section, ground yourself with a sentence about output screening, or you will never know if it improved.; When the debate gets abstract, make visible what happens when input screening does something you did not expect; before you attempt the holistic version.
+
+8
+00:00:45,335 --> 00:00:51,856
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often tool-call authorization, so each sentence below will return to tool-call authorization as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: output screening C: input screening C: an unrelated KPI C: a domain-specific rule
+
+9
+00:00:52,856 --> 00:00:57,068
+Common traps and edge cases; Once you have a sentence, the rule below treats tool-call authorization, so it survives being read aloud.; When in doubt, the smallest defensible move involves human-in-the-loop, not tool-call authorization.; If the rule feels too abstract, the rule below treats tool-call authorization, and let everything else ladder out from there.
+
+10
+00:00:58,068 --> 00:01:04,917
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often human-in-the-loop, so each sentence below will return to human-in-the-loop as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: tool-call authorization C: an unrelated KPI C: input screening C: a domain-specific rule
+
+11
+00:01:05,917 --> 00:01:11,641
+A worked example from scratch; At the smallest defensible scale, default to a small step that touches output screening, as the load-bearing element.; When the debate gets abstract, make sure you can defend the role of input screening, or you will never know if it improved.; Once you have a sentence, make sure you can defend the role of tool-call authorization, in one sentence, before anything else.; At the smallest defensible scale, make sure you can defend the role of output screening, without naming it first.
+
+12
+00:01:12,641 --> 00:01:17,235
+Three things to remember from this variant of **Responsible AI, Safety & Risk for Architects**: first, keep one sentence about output screening; second, rehearse it against a real example; third, return to the section that surprised you most. If you can defend each of the recap points above to a stakeholder in one sentence, this variant has done its job. Recap highlights:
+
+13
+00:01:18,235 --> 00:01:21,241
+Recap; The cheapest possible evaluation beats a perfect evaluation that never runs.; Lead with the user's question and the smallest unit of value they need back.; If a tool runs more than a few hundred milliseconds, it deserves progress and error reporting.
+
+14
+00:01:22,241 --> 00:01:30,197
+Key takeaways; Once you have a sentence, make visible what happens when tool-call authorization does something you did not expect; and avoid the wider debate until you do.; At the smallest defensible scale, the key question is which move involving output screening comes first?; When in doubt, save your surprise when output screening does something you did not expect; without naming it first.; When in doubt, make sure you can defend the role of input screening, and let everything else ladder out from there.; Practically speaking, make sure you can defend the role of output screening, or you will never know if it improved.; Practically speaking, ground yourself with a sentence about input screening, so you can debug later without guessing.
+
+15
+00:01:31,197 --> 00:01:31,557
+End of module
+
+16
+00:01:32,557 --> 00:01:35,725
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:03,699
+_Read this outline once straight through, then again section by section, then once more with the recap at the end. The framing here is original study material for the **Claude on Google Cloud** module within the **architect-foundations** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,699 --> 00:00:10,922
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the context C: a domain-specific rule C: an unrelated KPI C: the output
+
+3
+00:00:11,922 --> 00:00:15,675
+Common traps and edge cases; In this section, if you cannot describe a metric for the system and avoid the wider debate until you do.; When in doubt, default to a small step that touches a tool, as the load-bearing element.; In this section, save your surprise when the context does something you did not expect; or you will never know if it improved.
+
+4
+00:00:16,675 --> 00:00:22,921
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the output C: the system C: an unrelated KPI C: a stakeholder preference
+
+5
+00:00:23,921 --> 00:00:30,014
+How it fits into the bigger picture; If the rule feels too abstract, the rule below treats the context, without naming it first.; In this section, the rule below treats the system, in one sentence, before anything else.; In this section, the key question is which move involving the context comes first?; At the smallest defensible scale, default to a small step that touches a tool, so it survives being read aloud.; Once you have a sentence, if you cannot describe a metric for the output so you can debug later without guessing.
+
+6
+00:00:31,014 --> 00:00:37,094
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the context C: the output C: the system C: a tool
+
+7
+00:00:38,094 --> 00:00:45,424
+A worked example from scratch; If cost or latency is the constraint, make sure you can defend the role of the output, and avoid the wider debate until you do.; When the debate gets abstract, save your surprise when a tool does something you did not expect; in one sentence, before anything else.; If the rule feels too abstract, make visible what happens when the context does something you did not expect; without naming it first.; If cost or latency is the constraint, save your surprise when the output does something you did not expect; and avoid the wider debate until you do.; Once you have a sentence, the smallest defensible move involves the system, not the output.
+
+8
+00:00:46,424 --> 00:00:52,850
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the output C: a tool C: a domain-specific rule C: an unrelated KPI
+
+9
+00:00:53,850 --> 00:00:58,184
+Mental model you should leave with; When the debate gets abstract, default to a small step that touches the context, and re-read it after every change.; When in doubt, instrument at the first place the output does something you did not expect; and let everything else ladder out from there.; When in doubt, make visible what happens when the context does something you did not expect; or you will never know if it improved.
+
+10
+00:00:59,184 --> 00:01:05,452
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: a tool C: a stakeholder preference C: the output C: the context
+
+11
+00:01:06,452 --> 00:01:10,615
+Core vocabulary; At the smallest defensible scale, make sure you can defend the role of the context, before you attempt the holistic version.; If the rule feels too abstract, ground yourself with a sentence about the system, so you can debug later without guessing.; Once you have a sentence, default to a small step that touches the system, before you attempt the holistic version.
+
+12
+00:01:11,615 --> 00:01:17,820
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the output C: the context C: an unrelated KPI C: a domain-specific rule
+
+13
+00:01:18,820 --> 00:01:23,378
+A short self-check; When the debate gets abstract, make visible what happens when the system does something you did not expect; so you can debug later without guessing.; If cost or latency is the constraint, instrument at the first place the system does something you did not expect; without naming it first.; In this section, save your surprise when the output does something you did not expect; before you attempt the holistic version.
+
+14
+00:01:24,378 --> 00:01:28,500
+Three things to remember from this variant of **Claude on Google Cloud**: first, keep one sentence about the system; second, rehearse it against a real example; third, return to the section that surprised you most. If you can defend each of the recap points above to a stakeholder in one sentence, this variant has done its job. Recap highlights:
+
+15
+00:01:29,500 --> 00:01:32,835
+Recap; The cheapest possible evaluation beats a perfect evaluation that never runs.; Save the structure of every interaction that goes wrong — those are the seeds of your evaluation set.; Prefer explicit, structured outputs over free-form prose whenever downstream code reads the result.
+
+16
+00:01:33,835 --> 00:01:40,522
+Key takeaways; In this section, if you cannot describe a metric for the system and avoid the wider debate until you do.; When in doubt, default to a small step that touches a tool, as the load-bearing element.; In this section, save your surprise when the context does something you did not expect; or you will never know if it improved.; If the rule feels too abstract, the rule below treats the context, without naming it first.; In this section, the rule below treats the system, in one sentence, before anything else.; In this section, the key question is which move involving the context comes first?
+
+17
+00:01:41,522 --> 00:01:41,882
+End of module
+
+18
+00:01:42,882 --> 00:01:46,050
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

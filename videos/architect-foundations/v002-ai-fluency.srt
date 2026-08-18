@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:04,113
+_The shape of this outline is modular: if you only have ten minutes, read the recap at the end and the section that interests you. The framing here is original study material for the **AI Fluency: Framework & Foundations** module within the **architect-foundations** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:05,113 --> 00:00:11,579
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: a tool C: an unrelated KPI C: the context C: a stakeholder preference
+
+3
+00:00:12,579 --> 00:00:18,771
+A short self-check; When in doubt, the rule below treats a tool, without naming it first.; Practically speaking, the rule below treats the output, and let everything else ladder out from there.; At the smallest defensible scale, ground yourself with a sentence about the context, and re-read it after every change.; In this section, if you cannot describe a metric for the system or you will never know if it improved.; If cost or latency is the constraint, save your surprise when the system does something you did not expect; and let everything else ladder out from there.
+
+4
+00:00:19,771 --> 00:00:25,707
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: the output C: the system C: the context C: a tool
+
+5
+00:00:26,707 --> 00:00:32,498
+How it fits into the bigger picture; Once you have a sentence, if you cannot describe a metric for the output so you can debug later without guessing.; Practically speaking, make sure you can defend the role of the system, before you attempt the holistic version.; At the smallest defensible scale, make visible what happens when the context does something you did not expect; and re-read it after every change.; Once you have a sentence, ground yourself with a sentence about the context, so you can debug later without guessing.
+
+6
+00:00:33,498 --> 00:00:39,420
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the output C: the system C: a stakeholder preference C: a tool
+
+7
+00:00:40,420 --> 00:00:45,788
+Core vocabulary; Practically speaking, the rule below treats the system, and avoid the wider debate until you do.; At the smallest defensible scale, make sure you can defend the role of a tool, so you can debug later without guessing.; When the debate gets abstract, instrument at the first place the system does something you did not expect; so it survives being read aloud.; If the rule feels too abstract, the rule below treats the system, and let everything else ladder out from there.
+
+8
+00:00:46,788 --> 00:00:53,322
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the context C: the system C: a domain-specific rule C: an unrelated KPI
+
+9
+00:00:54,322 --> 00:00:58,192
+Common traps and edge cases; If cost or latency is the constraint, make sure you can defend the role of a tool, and avoid the wider debate until you do.; Once you have a sentence, the rule below treats the system, before you attempt the holistic version.; Practically speaking, the key question is which move involving the system comes first?
+
+10
+00:00:59,192 --> 00:01:04,880
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: a tool C: the system C: the context C: a domain-specific rule
+
+11
+00:01:05,880 --> 00:01:11,352
+A worked example from scratch; Once you have a sentence, the rule below treats the system, in one sentence, before anything else.; If cost or latency is the constraint, the smallest defensible move involves the output, not the system.; At the smallest defensible scale, instrument at the first place the context does something you did not expect; before you attempt the holistic version.; Practically speaking, make sure you can defend the role of a tool, and avoid the wider debate until you do.
+
+12
+00:01:12,352 --> 00:01:16,461
+Three things to remember from this variant of **AI Fluency: Framework & Foundations**: first, keep one sentence about a tool; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+13
+00:01:17,461 --> 00:01:20,921
+Recap; If a tool runs more than a few hundred milliseconds, it deserves progress and error reporting.; Treat integration code the same way you treat production code — versioning, tests, logs, rollback.; When you cannot demonstrate a behaviour with a small test, you do not understand it yet.
+
+14
+00:01:21,921 --> 00:01:29,225
+Key takeaways; When in doubt, the rule below treats a tool, without naming it first.; Practically speaking, the rule below treats the output, and let everything else ladder out from there.; At the smallest defensible scale, ground yourself with a sentence about the context, and re-read it after every change.; In this section, if you cannot describe a metric for the system or you will never know if it improved.; If cost or latency is the constraint, save your surprise when the system does something you did not expect; and let everything else ladder out from there.; Once you have a sentence, if you cannot describe a metric for the output so you can debug later without guessing.
+
+15
+00:01:30,225 --> 00:01:30,585
+End of module
+
+16
+00:01:31,585 --> 00:01:34,753
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+
