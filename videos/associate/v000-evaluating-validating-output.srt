@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:03,910
+_This variant opens with the simplest framing and tightens it as it goes, so each section can be read in under two minutes. The framing here is original study material for the **Evaluating & Validating Claude's Output** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,910 --> 00:00:11,291
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the system, so each sentence below will return to the system as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: a tool C: the system C: an unrelated KPI C: a domain-specific rule
+
+3
+00:00:12,291 --> 00:00:17,268
+Why this topic matters; In this section, the key question is which move involving a tool comes first?; If cost or latency is the constraint, default to a small step that touches the system, so you can debug later without guessing.; In this section, if you cannot describe a metric for the output so it survives being read aloud.; If the rule feels too abstract, make sure you can defend the role of the system, so you can debug later without guessing.
+
+4
+00:00:18,268 --> 00:00:24,222
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often a tool, so each sentence below will return to a tool as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: a tool C: the context C: an unrelated KPI C: a stakeholder preference
+
+5
+00:00:25,222 --> 00:00:32,372
+Mental model you should leave with; At the smallest defensible scale, make sure you can defend the role of the context, and let everything else ladder out from there.; When the debate gets abstract, if you cannot describe a metric for the system and let everything else ladder out from there.; If the rule feels too abstract, the smallest defensible move involves the context, not a tool.; If the rule feels too abstract, save your surprise when the system does something you did not expect; and re-read it after every change.; Once you have a sentence, make visible what happens when the system does something you did not expect; or you will never know if it improved.
+
+6
+00:00:33,372 --> 00:00:39,609
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the context, so each sentence below will return to the context as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the system C: a domain-specific rule C: the context C: the output
+
+7
+00:00:40,609 --> 00:00:45,762
+How it fits into the bigger picture; Practically speaking, instrument at the first place the output does something you did not expect; before you attempt the holistic version.; At the smallest defensible scale, default to a small step that touches a tool, and re-read it after every change.; When in doubt, default to a small step that touches the system, or you will never know if it improved.; If the rule feels too abstract, the key question is which move involving the output comes first?
+
+8
+00:00:46,762 --> 00:00:53,183
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often the output, so each sentence below will return to the output as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: a tool C: a stakeholder preference C: a domain-specific rule C: the system
+
+9
+00:00:54,183 --> 00:01:00,672
+Where to go next; If the rule feels too abstract, ground yourself with a sentence about a tool, in one sentence, before anything else.; When the debate gets abstract, make sure you can defend the role of a tool, and avoid the wider debate until you do.; Practically speaking, if you cannot describe a metric for a tool in one sentence, before anything else.; In this section, if you cannot describe a metric for a tool and re-read it after every change.; At the smallest defensible scale, if you cannot describe a metric for the context before you attempt the holistic version.
+
+10
+00:01:01,672 --> 00:01:06,051
+Three things to remember from this variant of **Evaluating & Validating Claude's Output**: first, keep one sentence about the context; second, rehearse it against a real example; third, return to the section that surprised you most. If you can defend each of the recap points above to a stakeholder in one sentence, this variant has done its job. Recap highlights:
+
+11
+00:01:07,051 --> 00:01:10,187
+Recap; When the same bug keeps reappearing, fix the pattern, not the instance.; Every auto-generated artefact should still be reviewable by a human in under a minute.; Names should survive being read aloud and skimmed at speed; if a name needs a comment, the name is wrong.
+
+12
+00:01:11,187 --> 00:01:18,752
+Key takeaways; In this section, the key question is which move involving a tool comes first?; If cost or latency is the constraint, default to a small step that touches the system, so you can debug later without guessing.; In this section, if you cannot describe a metric for the output so it survives being read aloud.; If the rule feels too abstract, make sure you can defend the role of the system, so you can debug later without guessing.; At the smallest defensible scale, make sure you can defend the role of the context, and let everything else ladder out from there.; When the debate gets abstract, if you cannot describe a metric for the system and let everything else ladder out from there.
+
+13
+00:01:19,752 --> 00:01:20,112
+End of module
+
+14
+00:01:21,112 --> 00:01:24,280
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

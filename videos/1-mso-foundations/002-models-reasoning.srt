@@ -1,9 +1,0 @@
-1
-00:00:00,000 --> 00:00:48,552
-Claude is a family of models that
-currently spans four tiers: Fable, Opus,…
-
-2
-00:00:48,552 --> 00:01:37,872
-Choosing which model to run is one
-decision. Whether the model reasons before…

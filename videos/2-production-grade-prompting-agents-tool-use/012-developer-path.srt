@@ -1,9 +1,0 @@
-1
-00:00:00,000 --> 00:00:58,032
-You can now write production-ready
-prompts, wire a tool-use loop that…
-
-2
-00:00:58,032 --> 00:01:27,552
-Up Next M4 Production Engineering, Evals,
-and Security Evals, tracing, failure…

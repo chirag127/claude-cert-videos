@@ -1,0 +1,222 @@
+{
+  "tracks": {
+    "associate": {
+      "title": "Claude Certified Associate — Foundations",
+      "modules": [
+        {
+          "slug": "platform-model-foundations",
+          "title": "Claude Platform & Model Foundations",
+          "objectives": [
+            "Select the right Claude entry point, model, and feature set for a given professional task",
+            "Manage context to maintain continuity across a session"
+          ]
+        },
+        {
+          "slug": "prompting-task-execution",
+          "title": "Prompting & Task Execution",
+          "objectives": [
+            "Write structured prompts using a repeatable component framework",
+            "Decompose complex requests",
+            "Iterate diagnostically to improve output quality"
+          ]
+        },
+        {
+          "slug": "evaluating-validating-output",
+          "title": "Evaluating & Validating Claude's Output",
+          "objectives": [
+            "Evaluate Claude's output for accuracy and completeness",
+            "Identify hallucinations and bias",
+            "Know when human verification is required"
+          ]
+        },
+        {
+          "slug": "workflow-integration-solution-design",
+          "title": "Workflow Integration & Solution Design",
+          "objectives": [
+            "Decide which workflow steps to delegate to Claude",
+            "Communicate Claude's value and limitations to stakeholders"
+          ]
+        },
+        {
+          "slug": "configuration-knowledge",
+          "title": "Configuration & Knowledge Management",
+          "objectives": [
+            "Configure Claude Projects with instructions and knowledge sources",
+            "Maintain those configurations so they stay accurate over time"
+          ]
+        },
+        {
+          "slug": "governance-risk-responsible-use",
+          "title": "Governance, Risk & Responsible Use",
+          "objectives": [
+            "Apply governance, data-sensitivity, and responsible-use judgments to everyday Claude work"
+          ]
+        },
+        {
+          "slug": "troubleshooting-optimization",
+          "title": "Troubleshooting & Optimization",
+          "objectives": [
+            "Diagnose underperforming prompts and outputs",
+            "Trace failures to a root cause",
+            "Optimize workflows so fixes persist"
+          ]
+        },
+        {
+          "slug": "course-summary-next-steps",
+          "title": "Course Summary & Next Steps",
+          "objectives": [
+            "Connect the seven skills taught in this course into one operating discipline"
+          ]
+        }
+      ]
+    },
+    "developer": {
+      "title": "Claude Certified Developer — Foundations",
+      "modules": [
+        {
+          "slug": "mso-foundations",
+          "title": "MSO Foundations",
+          "objectives": [
+            "Explain how Claude works at the level that affects engineering decisions",
+            "Tokens, context window as a fixed budget, sampling and non-determinism, model tiers, SDK versus REST"
+          ]
+        },
+        {
+          "slug": "production-grade-prompting-agents",
+          "title": "Production-Grade Prompting & Agentic Workflows",
+          "objectives": [
+            "Build your first production integration on Claude",
+            "Reliable prompts, tools, context management, and agent loops"
+          ]
+        },
+        {
+          "slug": "claude-code-mcp-integration",
+          "title": "Claude Code, MCP & Integration",
+          "objectives": [
+            "Make a working Claude integration configurable, shareable, and safe to connect to real systems"
+          ]
+        },
+        {
+          "slug": "production-engineering-evals-security",
+          "title": "Production Engineering, Evals & Security",
+          "objectives": [
+            "Take an integration from prototype to production",
+            "Run evals as gate before deploys"
+          ]
+        },
+        {
+          "slug": "accelerators-ip-contribution",
+          "title": "Accelerators, IP & Contribution",
+          "objectives": [
+            "Package internal tools and templates as reusable accelerators"
+          ]
+        }
+      ]
+    },
+    "architect-foundations": {
+      "title": "Claude Certified Architect — Foundations",
+      "modules": [
+        {
+          "slug": "ai-fluency",
+          "title": "AI Fluency: Framework & Foundations",
+          "objectives": [
+            "Collaborate with AI systems effectively, efficiently, ethically, and safely"
+          ]
+        },
+        {
+          "slug": "claude-api",
+          "title": "Building with the Claude API",
+          "objectives": [
+            "Operate Claude across the full spectrum of work using the Claude API"
+          ]
+        },
+        {
+          "slug": "google-cloud",
+          "title": "Claude on Google Cloud",
+          "objectives": [
+            "Deploy Claude on Google Cloud with the same feature surface as the API"
+          ]
+        },
+        {
+          "slug": "claude-code-in-action",
+          "title": "Claude Code in Action",
+          "objectives": [
+            "Run long, hands-off Claude Code sessions you can trust",
+            "Steer, configure, automate, and verify"
+          ]
+        },
+        {
+          "slug": "claude-101",
+          "title": "Claude 101",
+          "objectives": [
+            "Use Claude for everyday work tasks",
+            "Understand core features",
+            "Explore resources for more advanced learning"
+          ]
+        },
+        {
+          "slug": "bedrock",
+          "title": "Claude with Amazon Bedrock",
+          "objectives": [
+            "Operate Claude through Amazon Bedrock"
+          ]
+        },
+        {
+          "slug": "model-context-protocol",
+          "title": "Introduction to Model Context Protocol",
+          "objectives": [
+            "Build MCP servers and clients from scratch using Python",
+            "Master MCP's three core primitives: tools, resources, and prompts"
+          ]
+        }
+      ]
+    },
+    "architect-professional": {
+      "title": "Claude Certified Architect — Professional",
+      "modules": [
+        {
+          "slug": "claude-platform-solution-design",
+          "title": "Claude Platform & Solution Design",
+          "objectives": [
+            "Translate an ambiguous business problem into a scoped Claude solution",
+            "Select the reference architecture, model, context strategy, and entry point that keep it accurate and cost-conscious"
+          ]
+        },
+        {
+          "slug": "enterprise-integration-production",
+          "title": "Enterprise Integration & Production",
+          "objectives": [
+            "Take a solution from proof of concept to production",
+            "Map cost, latency, and reliability to a budget",
+            "Specify the integration patterns an enterprise will accept"
+          ]
+        },
+        {
+          "slug": "responsible-ai-safety-risk",
+          "title": "Responsible AI, Safety & Risk for Architects",
+          "objectives": [
+            "Design the full safety stack for a Claude system",
+            "Place input screening, output screening, and tool-call authorization so the system fails closed"
+          ]
+        },
+        {
+          "slug": "stakeholder-engagement-lifecycle-gtm",
+          "title": "Stakeholder Engagement, Lifecycle & GTM",
+          "objectives": [
+            "Run structured discovery with non-technical stakeholders",
+            "Present architectural trade-offs they can act on",
+            "Design a handoff that survives your absence"
+          ]
+        },
+        {
+          "slug": "team-enablement-operational-productivity",
+          "title": "Team Enablement & Operational Productivity",
+          "objectives": [
+            "Enable a team to adopt and operate a live Claude system",
+            "From shared configuration and rollout to developer workflows and operational issue resolution"
+          ]
+        }
+      ]
+    }
+  }
+}

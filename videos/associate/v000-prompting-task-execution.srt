@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:03,456
+_Each section is short enough to be skimmed and deep enough to be worth coming back to after the exam. The framing here is original study material for the **Prompting & Task Execution** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,455 --> 00:00:10,751
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often structured output, so each sentence below will return to structured output as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: few-shot examples C: structured output C: prompt C: the system message
+
+3
+00:00:11,751 --> 00:00:18,888
+Core vocabulary; If the rule feels too abstract, make sure you can defend the role of few-shot examples, and let everything else ladder out from there.; Once you have a sentence, ground yourself with a sentence about structured output, in one sentence, before anything else.; At the smallest defensible scale, the rule below treats prompt, without naming it first.; At the smallest defensible scale, make visible what happens when structured output does something you did not expect; in one sentence, before anything else.; Once you have a sentence, make sure you can defend the role of the system message, in one sentence, before anything else.
+
+4
+00:00:19,888 --> 00:00:26,413
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often structured output, so each sentence below will return to structured output as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: few-shot examples C: the system message C: structured output C: prompt
+
+5
+00:00:27,413 --> 00:00:33,205
+Where to go next; At the smallest defensible scale, make visible what happens when the system message does something you did not expect; and re-read it after every change.; If cost or latency is the constraint, ground yourself with a sentence about few-shot examples, or you will never know if it improved.; If the rule feels too abstract, the smallest defensible move involves structured output, not prompt.; When the debate gets abstract, the smallest defensible move involves the system message, not structured output.
+
+6
+00:00:34,205 --> 00:00:40,451
+Most weekly pain in this track traces back to a sloppy version of the rule introduced in this section. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often few-shot examples, so each sentence below will return to few-shot examples as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: prompt C: the system message C: a domain-specific rule C: structured output
+
+7
+00:00:41,451 --> 00:00:48,165
+How it fits into the bigger picture; If the rule feels too abstract, save your surprise when structured output does something you did not expect; and let everything else ladder out from there.; Practically speaking, instrument at the first place structured output does something you did not expect; and avoid the wider debate until you do.; Practically speaking, save your surprise when the system message does something you did not expect; as the load-bearing element.; If the rule feels too abstract, instrument at the first place prompt does something you did not expect; in one sentence, before anything else.
+
+8
+00:00:49,165 --> 00:00:55,748
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often few-shot examples, so each sentence below will return to few-shot examples as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: prompt C: an unrelated KPI C: the system message C: structured output
+
+9
+00:00:56,748 --> 00:01:02,166
+A worked example from scratch; When the debate gets abstract, default to a small step that touches few-shot examples, in one sentence, before anything else.; Once you have a sentence, the key question is which move involving the system message comes first?; If cost or latency is the constraint, the smallest defensible move involves prompt, not the system message.; At the smallest defensible scale, the smallest defensible move involves few-shot examples, not the system message.
+
+10
+00:01:03,166 --> 00:01:09,862
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Make the shortest correct first move, then verify it works, and only then add a second move. In this section the unit of work is most often structured output, so each sentence below will return to structured output as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: the system message C: a stakeholder preference C: few-shot examples C: a domain-specific rule
+
+11
+00:01:10,862 --> 00:01:14,642
+Common traps and edge cases; At the smallest defensible scale, make sure you can defend the role of prompt, and re-read it after every change.; Once you have a sentence, ground yourself with a sentence about prompt, or you will never know if it improved.; Practically speaking, the rule below treats prompt, without naming it first.
+
+12
+00:01:15,642 --> 00:01:19,800
+Three things to remember from this variant of **Prompting & Task Execution**: first, keep one sentence about few-shot examples; second, rehearse it against a real example; third, return to the section that surprised you most. The fastest way to validate this outline is to teach one of its points to a colleague and watch their face. Recap highlights:
+
+13
+00:01:20,800 --> 00:01:24,324
+Recap; Make the path from input to decision the shortest defensible one for the question at hand.; Names should survive being read aloud and skimmed at speed; if a name needs a comment, the name is wrong.; Treat integration code the same way you treat production code — versioning, tests, logs, rollback.
+
+14
+00:01:25,324 --> 00:01:33,955
+Key takeaways; If the rule feels too abstract, make sure you can defend the role of few-shot examples, and let everything else ladder out from there.; Once you have a sentence, ground yourself with a sentence about structured output, in one sentence, before anything else.; At the smallest defensible scale, the rule below treats prompt, without naming it first.; At the smallest defensible scale, make visible what happens when structured output does something you did not expect; in one sentence, before anything else.; Once you have a sentence, make sure you can defend the role of the system message, in one sentence, before anything else.; At the smallest defensible scale, make visible what happens when the system message does something you did not expect; and re-read it after every change.
+
+15
+00:01:34,955 --> 00:01:35,315
+End of module
+
+16
+00:01:36,315 --> 00:01:39,483
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

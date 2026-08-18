@@ -1,0 +1,9 @@
+{
+  "track": "associate",
+  "module": "v000-prompting-task-execution",
+  "title": "Prompting & Task Execution",
+  "slides": 16,
+  "duration_sec": 100.48,
+  "mp4": "videos\\associate\\v000-prompting-task-execution.mp4",
+  "srt": "videos\\associate\\v000-prompting-task-execution.srt"
+}

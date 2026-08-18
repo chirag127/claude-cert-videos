@@ -11,3 +11,12 @@ videos/**/_concat.mp4
 
 # raw extraction caches
 .cache_*.json
+
+# reverse-engineering intermediates
+.source_html/
+.parsed/
+.backup_text_v1/
+_extract_html.py
+
+# freebuff session state
+.freebuff/

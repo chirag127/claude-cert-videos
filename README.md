@@ -1,57 +1,96 @@
 # claude-cert-videos
 
-Turns the **Claude Certified Developer — Foundations** course modules (hosted on
-Skilljar) into small, chaptered, narrated MP4 videos you can watch instead of
-reading the written lessons.
+Generate **original** narrated study videos, interactive flashcards, and
+quizzes covering four Claude certification tracks:
 
-Each course module is a single interactive SCORM app. This repo extracts the
-teaching text from every screen, narrates it with neural text-to-speech, renders
-matching slides, and muxes everything into one MP4 per course — with **embedded
-chapter markers** (visible in VLC and most players) so you can jump section to
-section.
+- **Associate** — operating Claude for everyday work
+- **Developer** — building production-grade Claude systems
+- **Architect Foundations** — and the prelude to architect-level work
+- **Architect Professional** — design, integration, governance, lifecycle
 
-## Layout
+The pipeline is **not** a verbatim re-narrator of Skilljar courses. Every
+slide, narration line, caption, flashcard, and quiz question comes from the
+Markdown outlines in this repo, written in plain language from generic
+knowledge of Claude. See `LEGAL.md` for the full legal posture.
 
-```
-text/                 one JSON per course: {title, slug, voice, slides:[{chapter,heading,body}]}
-videos/               generated <slug>.mp4 + <slug>.chapters.txt   (committed, small)
-work/                 scratch: per-slide PNG/MP3/segment files      (gitignored)
-make_video.py         text JSON -> narrated MP4 with chapters
-build_course_json.py  raw extracted screens -> course JSON
-```
+## Prerequisites
 
-## The five modules
+- Python 3.11+
+- `ffmpeg` on PATH (`ffmpeg -version` should print a version 6.0+)
+- `pip install -r requirements.txt`  → installs Pillow and edge-tts
+- An internet connection **only** if you want edge-tts (high-quality neural
+  voices). Without it, the script falls back to Windows SAPI5 (offline).
 
-1. `mso-foundations` — MSO Foundations
-2. `production-grade-prompting-agents-tool-use` — Production-Grade Prompting, Agents & Tool Use
-3. `claude-code-mcp-integration` — Claude Code, MCP & Integration
-4. `production-engineering-evals-security` — Production Engineering, Evals & Security
-5. `accelerators-ip-contribution` — Accelerators & IP Contribution
-
-## Generate
+## One-shot build (recommended)
 
 ```bash
-pip install edge-tts pillow          # ffmpeg must be on PATH
-python make_video.py text/mso-foundations.json
-# -> videos/mso-foundations.mp4  (+ .chapters.txt)
+python build_all.py --force
 ```
 
-Regenerate all:
+This walks every track under `content/`, renders MP4s, writes flashcards,
+writes quizzes, and rebuilds the per-track interactive index pages.
+
+## Build a single track or module
 
 ```bash
-for j in text/*.json; do python make_video.py "$j"; done
+python make_video.py        associate        1-platform-foundations
+python make_flashcards.py   associate        1-platform-foundations
+python make_quiz.py         associate        1-platform-foundations
+python make_interactive.py  associate        --title "..."   --summary "..."
 ```
 
-## Encoding — small on purpose
+## TTS engines
 
-Slides are static, so the file is dominated by the speech track. Settings keep
-each MP4 well under Git's limits (no LFS needed):
+- `edge-tts` (recommended) — high-quality neural voice, requires internet:
+  `set CLAUDE_TTS_VOICE=en-US-AriaNeural` to override voice.
+- Windows SAPI5 (offline fallback) — used automatically when edge-tts is not
+  installed. Install with `pip install pywin32` for better reliability, but
+  the basic fallback works without extra deps.
 
-- 960×540, H.264, CRF 32, `-tune stillimage`, 5 fps
-- mono AAC @ 48 kbit/s
-- `+faststart` for instant web playback
+## Output layout
 
-## Notes
+```
+content/<track>/<module>.md       ← your outline (source of truth)
+videos/<track>/<module>.mp4       ← rendered MP4
+videos/<track>/<module>.srt       ← captions (1 entry per slide)
+videos/<track>/<module>.meta.json ← build metadata
+flashcards/<track>/<module>.html  ← self-contained flashcard deck
+quizzes/<track>/<module>.html     ← self-contained MCQ quiz
+interactive/<track>/index.html    ← course shell with video + flashcards + quiz
+work/<track>/<module>/             ← intermediates (PNG slides, WAV, clips)
+publish/<track>/upload.json       ← upload manifest (YouTube / Udemy / GH)
+publish/<track>/titles.tsv
+publish/<track>/README.md         ← per-track upload instructions
+```
 
-Content is © Anthropic, reproduced here only as a personal
-study-by-video aid for the author's own enrolled course.
+## Publishing
+
+The pipeline **never pushes or uploads** anything. It only writes local
+artifacts and prints dry-run commands. To publish:
+
+1. Open `publish/<track>/README.md` and follow its checklist.
+2. For YouTube: paste title, description, and tags from `titles.tsv`.
+3. For Udemy: copy `upload.json` descriptions into your course's lectures.
+4. For GitHub: review `git status`, then `git push` yourself. The repo's
+   `.gitignore` keeps `work/`, `__pycache__/`, and the legacy `.source_html/`,
+   `.parsed/`, `.cache_*.json` out of the commit by default.
+
+## Extending the library
+
+Drop a new Markdown file into `content/<track>/`, then run
+`python build_all.py --track <track>`. The outline supports:
+
+- `# Title` — module title
+- `## Section heading` — top-level slide group; everything before the next
+  `##` is the section's body
+- `- bullet` lines — rendered as one bullet point per line
+
+For inline multiple choice, drop `Q:`, `A:`, and `C:` markers into the
+Markdown and the quiz generator picks them up automatically. See
+`make_quiz.py` for the exact grammar.
+
+## Pinned dependency comments
+
+- `Pillow>=10.0` — slide rendering.
+- `edge-tts>=6.1` — high-quality neural TTS (optional).
+- `ffmpeg` — external binary; verify with `ffmpeg -version`.

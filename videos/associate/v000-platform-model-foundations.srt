@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:03,843
+_This variant opens with the simplest framing and tightens it as it goes, so each section can be read in under two minutes. The framing here is original study material for the **Claude Platform & Model Foundations** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,843 --> 00:00:11,242
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often cost tier, so each sentence below will return to cost tier as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: cost tier C: model tier C: latency tier C: a stakeholder preference
+
+3
+00:00:12,242 --> 00:00:19,266
+Why this topic matters; If the rule feels too abstract, the rule below treats latency tier, and avoid the wider debate until you do.; If the rule feels too abstract, make visible what happens when cost tier does something you did not expect; or you will never know if it improved.; Once you have a sentence, if you cannot describe a metric for cost tier in one sentence, before anything else.; In this section, default to a small step that touches cost tier, in one sentence, before anything else.; Once you have a sentence, default to a small step that touches the context window, so you can debug later without guessing.
+
+4
+00:00:20,266 --> 00:00:26,922
+If you skip this section, the later lessons will look like rigid recipes; if you internalise it, they will look like judgement calls. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often the context window, so each sentence below will return to the context window as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: latency tier C: model tier C: a stakeholder preference C: an unrelated KPI
+
+5
+00:00:27,922 --> 00:00:32,282
+Core vocabulary; Once you have a sentence, make visible what happens when model tier does something you did not expect; without naming it first.; At the smallest defensible scale, the key question is which move involving the context window comes first?; In this section, make visible what happens when the context window does something you did not expect; and re-read it after every change.
+
+6
+00:00:33,282 --> 00:00:39,821
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often latency tier, so each sentence below will return to latency tier as the anchor noun. Q: What is a common trap that this outline explicitly tries to avoid? A: the context window C: a stakeholder preference C: latency tier C: an unrelated KPI
+
+7
+00:00:40,821 --> 00:00:44,907
+Mental model you should leave with; When the debate gets abstract, the rule below treats model tier, without naming it first.; At the smallest defensible scale, the smallest defensible move involves latency tier, not cost tier.; Once you have a sentence, save your surprise when latency tier does something you did not expect; in one sentence, before anything else.
+
+8
+00:00:45,907 --> 00:00:52,260
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often the context window, so each sentence below will return to the context window as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: model tier C: an unrelated KPI C: cost tier C: the context window
+
+9
+00:00:53,260 --> 00:01:00,024
+Where to go next; Practically speaking, save your surprise when cost tier does something you did not expect; and re-read it after every change.; If cost or latency is the constraint, the smallest defensible move involves model tier, not cost tier.; Once you have a sentence, ground yourself with a sentence about the context window, or you will never know if it improved.; Once you have a sentence, if you cannot describe a metric for cost tier and re-read it after every change.; In this section, instrument at the first place latency tier does something you did not expect; without naming it first.
+
+10
+00:01:01,024 --> 00:01:07,360
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often cost tier, so each sentence below will return to cost tier as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: cost tier C: an unrelated KPI C: latency tier C: model tier
+
+11
+00:01:08,360 --> 00:01:15,043
+Common traps and edge cases; Once you have a sentence, the smallest defensible move involves model tier, not the context window.; If the rule feels too abstract, make visible what happens when model tier does something you did not expect; in one sentence, before anything else.; If the rule feels too abstract, the smallest defensible move involves cost tier, not latency tier.; When in doubt, the smallest defensible move involves cost tier, not the context window.; Practically speaking, ground yourself with a sentence about the context window, as the load-bearing element.
+
+12
+00:01:16,043 --> 00:01:22,545
+Once you can defend this principle in one sentence, the rest of the path becomes a series of design choices rather than memorisation. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often cost tier, so each sentence below will return to cost tier as the anchor noun. Q: Pick the statement that is most consistent with the framing of this outline. A: latency tier C: model tier C: the context window C: a stakeholder preference
+
+13
+00:01:23,545 --> 00:01:27,622
+How it fits into the bigger picture; If cost or latency is the constraint, ground yourself with a sentence about model tier, as the load-bearing element.; At the smallest defensible scale, the key question is which move involving cost tier comes first?; In this section, default to a small step that touches the context window, or you will never know if it improved.
+
+14
+00:01:28,622 --> 00:01:33,041
+Three things to remember from this variant of **Claude Platform & Model Foundations**: first, keep one sentence about latency tier; second, rehearse it against a real example; third, return to the section that surprised you most. Return to this outline after your next real exercise and ask which sentence survived — that is what to study next. Recap highlights:
+
+15
+00:01:34,041 --> 00:01:36,984
+Recap; Choose a level of abstraction before you choose a tool — abstractions outlive APIs.; When the same bug keeps reappearing, fix the pattern, not the instance.; When you cannot demonstrate a behaviour with a small test, you do not understand it yet.
+
+16
+00:01:37,984 --> 00:01:46,264
+Key takeaways; If the rule feels too abstract, the rule below treats latency tier, and avoid the wider debate until you do.; If the rule feels too abstract, make visible what happens when cost tier does something you did not expect; or you will never know if it improved.; Once you have a sentence, if you cannot describe a metric for cost tier in one sentence, before anything else.; In this section, default to a small step that touches cost tier, in one sentence, before anything else.; Once you have a sentence, default to a small step that touches the context window, so you can debug later without guessing.; Once you have a sentence, make visible what happens when model tier does something you did not expect; without naming it first.
+
+17
+00:01:47,264 --> 00:01:47,624
+End of module
+
+18
+00:01:48,624 --> 00:01:51,792
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

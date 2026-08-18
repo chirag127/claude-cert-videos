@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:03,721
+_Treat each section as a separate short drill — its job is to leave you with one sentence you can defend out loud. The framing here is original study material for the **Claude Platform & Model Foundations** module within the **associate** track — it is generated locally and is not derived from any course copy._
+
+2
+00:00:04,721 --> 00:00:10,908
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Pick the right level of abstraction first; then the right tool; then the right words; only then start writing. In this section the unit of work is most often cost tier, so each sentence below will return to cost tier as the anchor noun. Q: What would a stakeholder most want to hear you say about this section? A: cost tier C: the context window C: a domain-specific rule C: model tier
+
+3
+00:00:11,908 --> 00:00:16,764
+Mental model you should leave with; Once you have a sentence, save your surprise when the context window does something you did not expect; and let everything else ladder out from there.; If cost or latency is the constraint, default to a small step that touches latency tier, before you attempt the holistic version.; At the smallest defensible scale, save your surprise when cost tier does something you did not expect; and avoid the wider debate until you do.
+
+4
+00:00:17,764 --> 00:00:24,491
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often cost tier, so each sentence below will return to cost tier as the anchor noun. Q: Which choice best captures the load-bearing principle of the section above? A: the context window C: a stakeholder preference C: a domain-specific rule C: an unrelated KPI
+
+5
+00:00:25,491 --> 00:00:30,397
+Where to go next; Once you have a sentence, the key question is which move involving the context window comes first?; Practically speaking, the smallest defensible move involves cost tier, not model tier.; When in doubt, make sure you can defend the role of model tier, in one sentence, before anything else.; If cost or latency is the constraint, default to a small step that touches model tier, in one sentence, before anything else.
+
+6
+00:00:31,397 --> 00:00:37,629
+Treat this as load-bearing: any system that respects the rest of the curriculum will quietly enforce the principle below. Treat the system as a chain of single-step commitments, each of which you can describe in under fifteen words. In this section the unit of work is most often model tier, so each sentence below will return to model tier as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the context window C: a stakeholder preference C: model tier C: latency tier
+
+7
+00:00:38,629 --> 00:00:46,216
+A worked example from scratch; If the rule feels too abstract, ground yourself with a sentence about cost tier, and re-read it after every change.; In this section, ground yourself with a sentence about cost tier, in one sentence, before anything else.; When the debate gets abstract, make visible what happens when latency tier does something you did not expect; and re-read it after every change.; If cost or latency is the constraint, instrument at the first place model tier does something you did not expect; so it survives being read aloud.; If cost or latency is the constraint, ground yourself with a sentence about model tier, or you will never know if it improved.
+
+8
+00:00:47,216 --> 00:00:53,624
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Treat the prompt as a contract, the context as the budget, and the iteration as the audit trail. In this section the unit of work is most often latency tier, so each sentence below will return to latency tier as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: cost tier C: an unrelated KPI C: latency tier C: model tier
+
+9
+00:00:54,624 --> 00:01:00,042
+Common traps and edge cases; When in doubt, make visible what happens when model tier does something you did not expect; and re-read it after every change.; If cost or latency is the constraint, the key question is which move involving latency tier comes first?; When in doubt, make sure you can defend the role of model tier, or you will never know if it improved.; If the rule feels too abstract, ground yourself with a sentence about latency tier, so it survives being read aloud.
+
+10
+00:01:01,042 --> 00:01:07,513
+The reason this section sits in the path is that almost every mistake further along turns out to be a misapplication of the idea covered here. Keep the smallest defensible decision close to the user, and let every other concern ladder out from there. In this section the unit of work is most often model tier, so each sentence below will return to model tier as the anchor noun. Q: Which of these is the shortest defensible first move when applying this rule? A: the context window C: latency tier C: a domain-specific rule C: model tier
+
+11
+00:01:08,513 --> 00:01:14,444
+Why this topic matters; When the debate gets abstract, the smallest defensible move involves model tier, not latency tier.; If the rule feels too abstract, if you cannot describe a metric for latency tier and re-read it after every change.; Once you have a sentence, instrument at the first place latency tier does something you did not expect; in one sentence, before anything else.; At the smallest defensible scale, the rule below treats the context window, so you can debug later without guessing.
+
+12
+00:01:15,444 --> 00:01:19,526
+Three things to remember from this variant of **Claude Platform & Model Foundations**: first, keep one sentence about model tier; second, rehearse it against a real example; third, return to the section that surprised you most. Mark the section that surprises you most; that surprise is your next study session's prompt. Recap highlights:
+
+13
+00:01:20,526 --> 00:01:23,887
+Recap; Every auto-generated artefact should still be reviewable by a human in under a minute.; The cheapest possible evaluation beats a perfect evaluation that never runs.; Trust boundaries belong at the network edge, the data edge, and the human review edge; not in the middle of a flow.
+
+14
+00:01:24,887 --> 00:01:32,897
+Key takeaways; Once you have a sentence, save your surprise when the context window does something you did not expect; and let everything else ladder out from there.; If cost or latency is the constraint, default to a small step that touches latency tier, before you attempt the holistic version.; At the smallest defensible scale, save your surprise when cost tier does something you did not expect; and avoid the wider debate until you do.; Once you have a sentence, the key question is which move involving the context window comes first?; Practically speaking, the smallest defensible move involves cost tier, not model tier.; When in doubt, make sure you can defend the role of model tier, in one sentence, before anything else.
+
+15
+00:01:33,897 --> 00:01:34,257
+End of module
+
+16
+00:01:35,257 --> 00:01:38,425
+Source: anthropic-partners.skilljar.com
+Course released by Anthropic PBC under the MIT License.
+This video is generated locally from public catalog seeds.
+See NOTICE in the repository for the full attribution block.
+

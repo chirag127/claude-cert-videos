@@ -1,3 +1,14 @@
-edge-tts>=6.1
+# Original-content video pipeline. Required for build_all / make_video.
+# Install with:  python -m pip install -r requirements.txt
+
+# Image rendering for slides.
 Pillow>=10.0
-# ffmpeg + ffprobe must be installed separately and on PATH
+
+# edge-tts is optional but recommended: high quality neural voices, no API key.
+# If absent, the script falls back to Windows SAPI5 via PowerShell (offline).
+edge-tts>=6.1
+
+# ffmpeg must be installed separately and on PATH. Verified with 8.1+.
+#   Windows: https://www.gyan.dev/ffmpeg/builds/  (or winget install Gyan.FFmpeg)
+#   macOS:   brew install ffmpeg
+#   Linux:   apt-get install -y ffmpeg   (or your distro equivalent)

@@ -1,9 +1,0 @@
-1
-00:00:00,000 --> 00:00:56,640
-One: Tokens are the unit of input, output,
-and cost. Think and budget in tokens…
-
-2
-00:00:56,640 --> 00:01:09,456
-Choose between synchronous, streaming,
-async await, or batch based on whether a…
