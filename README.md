@@ -1,96 +1,107 @@
 # claude-cert-videos
 
-Generate **original** narrated study videos, interactive flashcards, and
-quizzes covering four Claude certification tracks:
+Deterministically generate **original** narrated study videos, interactive
+flashcards, and quizzes for four Claude certification tracks:
 
 - **Associate** — operating Claude for everyday work
 - **Developer** — building production-grade Claude systems
-- **Architect Foundations** — and the prelude to architect-level work
+- **Architect Foundations** — architect-level foundations
 - **Architect Professional** — design, integration, governance, lifecycle
 
-The pipeline is **not** a verbatim re-narrator of Skilljar courses. Every
-slide, narration line, caption, flashcard, and quiz question comes from the
-Markdown outlines in this repo, written in plain language from generic
-knowledge of Claude. See `LEGAL.md` for the full legal posture.
+The pipeline is a **generator, not a scraper**. It reads only public catalog
+metadata (course titles + learning objectives) from `seeds/seeds.json`, then
+composes fresh prose locally with a seeded RNG. No lesson text, transcript,
+flashcard, or video from the source site ever enters the pipeline. See
+`LEGAL.md` for the full posture and `NOTICE` for attribution.
+
+## How it works
+
+```
+seeds/seeds.json                ← facts only (titles + learning objectives)
+        │
+        ▼  make_outline.py       seeded, byte-deterministic generator
+content/<track>/vNNN-<slug>.md   ← original Markdown variants
+        │
+        ├── make_video.py        → videos/<track>/vNNN-<slug>.mp4 (+ .srt, .meta.json, chapters)
+        ├── make_flashcards.py   → flashcards/<track>/vNNN-<slug>.html
+        ├── make_quiz.py         → quizzes/<track>/vNNN-<slug>.html
+        └── make_interactive.py  → interactive/<track>/index.html
+```
+
+Same `(track, slug, variant_seed)` ⇒ byte-identical Markdown ⇒ identical
+slide layout and ffmpeg mux. TTS audio varies slightly across network calls,
+but the source-of-truth and renderer are deterministic.
 
 ## Prerequisites
 
 - Python 3.11+
-- `ffmpeg` on PATH (`ffmpeg -version` should print a version 6.0+)
-- `pip install -r requirements.txt`  → installs Pillow and edge-tts
-- An internet connection **only** if you want edge-tts (high-quality neural
-  voices). Without it, the script falls back to Windows SAPI5 (offline).
+- `ffmpeg` on PATH (`ffmpeg -version`)
+- `pip install -r requirements.txt` → Pillow, edge-tts
+- Internet **only** for edge-tts voices; otherwise it falls back to Windows
+  SAPI5 (offline)
 
-## One-shot build (recommended)
-
-```bash
-python build_all.py --force
-```
-
-This walks every track under `content/`, renders MP4s, writes flashcards,
-writes quizzes, and rebuilds the per-track interactive index pages.
-
-## Build a single track or module
+## Build everything
 
 ```bash
-python make_video.py        associate        1-platform-foundations
-python make_flashcards.py   associate        1-platform-foundations
-python make_quiz.py         associate        1-platform-foundations
-python make_interactive.py  associate        --title "..."   --summary "..."
+# 3 variants × 25 modules = 75 videos, resumes where it left off
+python build_all.py --variants 3
+
+# re-render everything, even fresh outputs
+python build_all.py --variants 3 --force
+
+# one track only
+python build_all.py --track developer --variants 3
+
+# flashcards + quizzes + index only (no TTS, fast)
+python build_all.py --variants 3 --skip-video
 ```
+
+`build_all.py` skips outputs that are already fresh (resume-friendly), so a
+killed run can be restarted with the same command.
+
+## Regenerate or add content
+
+```bash
+# regenerate outlines from seeds (different phrasing per seed offset)
+python make_outline.py --variants 3
+python make_outline.py --variants 3 --seed-offset 100   # a different set
+
+# one variant
+python make_outline.py --out associate/platform-model-foundations/0
+```
+
+Add or edit entries in `seeds/seeds.json` (titles + learning objectives —
+no lesson content), then run the build again.
 
 ## TTS engines
 
-- `edge-tts` (recommended) — high-quality neural voice, requires internet:
-  `set CLAUDE_TTS_VOICE=en-US-AriaNeural` to override voice.
-- Windows SAPI5 (offline fallback) — used automatically when edge-tts is not
-  installed. Install with `pip install pywin32` for better reliability, but
-  the basic fallback works without extra deps.
+- `edge-tts` (default) — neural voices, online. Override voice with the
+  `CLAUDE_TTS_VOICE` env var (default `en-US-AriaNeural`).
+- Windows SAPI5 — offline fallback, used automatically when edge-tts fails.
 
 ## Output layout
 
 ```
-content/<track>/<module>.md       ← your outline (source of truth)
-videos/<track>/<module>.mp4       ← rendered MP4
-videos/<track>/<module>.srt       ← captions (1 entry per slide)
-videos/<track>/<module>.meta.json ← build metadata
-flashcards/<track>/<module>.html  ← self-contained flashcard deck
-quizzes/<track>/<module>.html     ← self-contained MCQ quiz
-interactive/<track>/index.html    ← course shell with video + flashcards + quiz
-work/<track>/<module>/             ← intermediates (PNG slides, WAV, clips)
-publish/<track>/upload.json       ← upload manifest (YouTube / Udemy / GH)
-publish/<track>/titles.tsv
-publish/<track>/README.md         ← per-track upload instructions
+seeds/seeds.json                     ← input facts (source of truth)
+content/<track>/vNNN-<slug>.md       ← generated original outlines
+videos/<track>/vNNN-<slug>.mp4       ← 720p30 MP4 + chapters
+videos/<track>/vNNN-<slug>.srt       ← captions
+videos/<track>/vNNN-<slug>.meta.json ← build metadata
+flashcards/<track>/vNNN-<slug>.html  ← self-contained flashcard deck
+quizzes/<track>/vNNN-<slug>.html     ← self-contained MCQ quiz
+interactive/<track>/index.html       ← per-track course shell
+work/<track>/<slug>/                 ← intermediates (regenerated, gitignored)
 ```
 
-## Publishing
-
-The pipeline **never pushes or uploads** anything. It only writes local
-artifacts and prints dry-run commands. To publish:
-
-1. Open `publish/<track>/README.md` and follow its checklist.
-2. For YouTube: paste title, description, and tags from `titles.tsv`.
-3. For Udemy: copy `upload.json` descriptions into your course's lectures.
-4. For GitHub: review `git status`, then `git push` yourself. The repo's
-   `.gitignore` keeps `work/`, `__pycache__/`, and the legacy `.source_html/`,
-   `.parsed/`, `.cache_*.json` out of the commit by default.
-
-## Extending the library
-
-Drop a new Markdown file into `content/<track>/`, then run
-`python build_all.py --track <track>`. The outline supports:
+## Markdown grammar (generated by make_outline.py)
 
 - `# Title` — module title
-- `## Section heading` — top-level slide group; everything before the next
-  `##` is the section's body
-- `- bullet` lines — rendered as one bullet point per line
+- `## Section` — slide group
+- `- bullet` — one bullet per slide
+- `Q:` / `A:` / `C:` blocks — parsed into quiz questions and flashcards
 
-For inline multiple choice, drop `Q:`, `A:`, and `C:` markers into the
-Markdown and the quiz generator picks them up automatically. See
-`make_quiz.py` for the exact grammar.
+## Licensing
 
-## Pinned dependency comments
-
-- `Pillow>=10.0` — slide rendering.
-- `edge-tts>=6.1` — high-quality neural TTS (optional).
-- `ffmpeg` — external binary; verify with `ffmpeg -version`.
+`LICENSE` (MIT) covers the pipeline, scripts, and generated artifacts.
+`NOTICE` carries the required attribution for the source course material.
+Read `LEGAL.md` before redistributing.

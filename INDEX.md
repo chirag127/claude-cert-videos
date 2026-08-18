@@ -1,30 +1,47 @@
 # Course index
 
-The four tracks ship in `content/<track>/`, each module is one Markdown
-outline. Videos, flashcards, quizzes, and per-track interactive pages are
-generated into `videos/`, `flashcards/`, `quizzes/`, and `interactive/`.
+Four tracks, 25 modules, generated in 3 variants each = **75 original study
+units**. Each unit produces a video, a flashcard deck, and a quiz.
 
 ## Tracks
 
-| Track | Modules | Notes |
-|-------|--------:|-------|
-| `associate` | 7 | Operating Claude confidently |
-| `developer` | 5 | Building production-grade Claude systems |
-| `architect-foundations` | 6 | Architect-level foundations |
-| `architect-professional` | 5 | Architect-level professional |
+| Track | Modules | Variants | Total units |
+|-------|--------:|---------:|------------:|
+| `associate` | 8 | 3 | 24 |
+| `developer` | 5 | 3 | 15 |
+| `architect-foundations` | 7 | 3 | 21 |
+| `architect-professional` | 5 | 3 | 15 |
+| **Total** | **25** | | **75** |
 
-Module count totals 23 lessons plus an opening overview per track. Edit or
-extend any Markdown file under `content/`, then run `python build_all.py
---force`.
+## Per-track entrypoints (after build)
 
-## Per-track entrypoint
+| Track | Course shell |
+|-------|-------------|
+| `associate` | `interactive/associate/index.html` |
+| `developer` | `interactive/developer/index.html` |
+| `architect-foundations` | `interactive/architect-foundations/index.html` |
+| `architect-professional` | `interactive/architect-professional/index.html` |
 
-After building:
+## Outputs per unit
 
-- Videos:        `videos/<track>/<slug>.mp4` and `.srt`
-- Flashcards:    `flashcards/<track>/<slug>.html`
-- Quizzes:       `quizzes/<track>/<slug>.html`
-- Course shell:  `interactive/<track>/index.html`
-- Upload meta:   `publish/<track>/upload.json` and `titles.tsv`
+- Video:      `videos/<track>/vNNN-<slug>.mp4` (+ `.srt`, `.meta.json`, `.chapters.txt`)
+- Flashcards: `flashcards/<track>/vNNN-<slug>.html`
+- Quiz:       `quizzes/<track>/vNNN-<slug>.html`
+- Outline:    `content/<track>/vNNN-<slug>.md`
 
-Open `interactive/<track>/index.html` in any browser.
+## Build
+
+```bash
+python build_all.py --variants 3            # full build, resumes automatically
+python build_all.py --track developer --variants 3
+python build_all.py --variants 3 --skip-video   # HTML only, no TTS
+```
+
+Regenerate the outlines at any time:
+
+```bash
+python make_outline.py --variants 3
+python make_outline.py --variants 3 --seed-offset 100   # a different phrasing set
+```
+
+See `README.md` for the full pipeline and `LEGAL.md` for attribution.

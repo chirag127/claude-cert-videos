@@ -8,7 +8,8 @@ Per (track, module, variant_seed):
 
 After each track, write interactive/<track>/index.html via make_interactive.py.
 
-Output is byte-deterministic given (track, slug, seed) — re-running produces identical files.
+Output is byte-deterministic given (track, slug, seed). By default already-fresh
+outputs are skipped (resume-friendly); use --force to re-render everything.
 """
 from __future__ import annotations
 
@@ -67,6 +68,22 @@ TRACKS = {
 }
 
 
+def _is_fresh(md: Path) -> bool:
+    """True if the mp4 + flashcards + quiz for this md already exist and are newer than it."""
+    rel = md.relative_to(ROOT / "content")
+    track = rel.parts[0]
+    stem = md.stem
+    outputs = [
+        ROOT / "videos" / track / f"{stem}.mp4",
+        ROOT / "flashcards" / track / f"{stem}.html",
+        ROOT / "quizzes" / track / f"{stem}.html",
+    ]
+    if not all(p.exists() for p in outputs):
+        return False
+    src_mtime = md.stat().st_mtime
+    return all(p.stat().st_mtime >= src_mtime for p in outputs)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--track", help="only build one track (default: all)")
@@ -75,6 +92,8 @@ def main() -> None:
     ap.add_argument("--regen-md", action="store_true",
                     help="rewrite the .md files even if they exist on disk")
     ap.add_argument("--skip-video", action="store_true")
+    ap.add_argument("--force", action="store_true",
+                    help="re-render even when outputs are fresh (default: resume/skip)")
     args = ap.parse_args()
 
     seeds = json.loads((ROOT / "seeds" / "seeds.json").read_text(encoding="utf-8"))
@@ -93,6 +112,9 @@ def main() -> None:
                 md = folder / f"v{seed:03d}-{m['slug']}.md"
                 if args.regen_md or not md.exists():
                     md.write_text(make_outline.generate_outline(track, m, seed), encoding="utf-8")
+                if not args.force and _is_fresh(md):
+                    print(f"[cached] {track}/v{seed:03d}-{m['slug']}")
+                    continue
                 try:
                     if not args.skip_video:
                         render_outline(track, md)
